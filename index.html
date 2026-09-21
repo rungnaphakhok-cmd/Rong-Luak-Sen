@@ -5,35 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ร้านโรงลวกเส้น - อร่อย เข้มข้น เส้นเหนียวนุ่ม</title>
 
-    <!-- 
-      =======================================================================
-      NOTE ON FOLDER STRUCTURE & .gitkeep:
-      =======================================================================
-      โฟลเดอร์ assets/images/ ถูกสร้างและรักษาสถานะโฟลเดอร์ในระบบ Git ไว้ด้วยไฟล์ .gitkeep
-      
-      โครงสร้างไฟล์ที่แนะนำ:
-      project/
-      ├── index.html
-      └── assets/
-          └── images/
-              ├── .gitkeep          (ไฟล์คงสภาพโฟลเดอร์)
-              ├── hero-banner.jpg   (รูปแบนเนอร์หน้าแรก)
-              ├── menu-boat-noodle.jpg (รูปเมนูก๋วยเตี๋ยวเรือ)
-              ├── menu-kaprao.jpg   (รูปเมนูกะเพรา)
-              ├── menu-khao-soi.jpg (รูปเมนูกาซอย)
-              ├── menu-pork-leg.jpg (รูปเมนูข้าวขาหมู)
-              ├── menu-dessert.jpg  (รูปเมนูขนมหวาน/เครื่องดื่ม)
-              ├── about-restaurant.jpg (รูปบรรยากาศร้าน)
-              ├── gallery-1.jpg
-              ├── gallery-2.jpg
-              ├── gallery-3.jpg
-              └── gallery-4.jpg
-
-      ข้อแนะนำ: คุณสามารถเซฟรูปภาพลงในโฟลเดอร์ assets/images/ แล้วเปลี่ยนชื่อไฟล์
-      ในโค้ดตามชื่อรูปของคุณได้ทันที!
-      =======================================================================
-    -->
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -175,15 +146,14 @@
                     <!-- Hero Image Banner Placeholder -->
                     <div class="relative flex justify-center">
                         <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-500/30 bg-zinc-900">
-                            <!-- Image Source points to assets/images/hero-banner.jpg -->
-                            <img src="assets/images/ก๋วยเตี๋ยวต้มยำ หมูทรงเครื่อง.JPG" 
+                            <img src="assets/images/hero-banner.jpg" 
                                  onerror="this.src='https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80'" 
                                  alt="ก๋วยเตี๋ยวเรือโรงลวกเส้น" 
                                  class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6">
                                 <div class="text-white">
                                     <p class="text-amber-400 font-bold text-sm">เมนูขายดีอันดับ 1</p>
-                                    <p class="text-xl font-bold">ก๋วยเตี๋ยวต้มยำหมูทรงเครื่อง</p>
+                                    <p class="text-xl font-bold">ก๋วยเตี๋ยวเรือน้ำตกเนื้อโพนยางคำ</p>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +209,7 @@
                 </div>
             </div>
 
-            <!-- Customer Reviews / Testimonials -->
+            <!-- Customer Reviews -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div class="text-center max-w-2xl mx-auto mb-12">
                     <span class="text-amber-400 font-bold text-sm">Customer Voices</span>
@@ -251,7 +221,7 @@
                         <div class="flex text-amber-400 text-lg">★★★★★</div>
                         <p class="text-slate-300 text-sm italic">"น้ำซุปเตี๋ยวเรือเข้มข้นมาก พริกคั่วหอมสุดๆ ข้าวขาหมูก็เปื่อยกำลังดี ไม่ผิดหวังเลยครับที่ตามมารีวิว"</p>
                         <div class="flex items-center gap-3 pt-2 border-t border-zinc-800">
-                            <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">คุณกอล์ฟ</div>
+                            <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">กอล์ฟ</div>
                             <div>
                                 <p class="text-sm font-bold text-white">คุณพงศธร (กอล์ฟ)</p>
                                 <p class="text-xs text-slate-500">ลูกค้าประจำ Lineman</p>
@@ -263,7 +233,7 @@
                         <div class="flex text-amber-400 text-lg">★★★★★</div>
                         <p class="text-slate-300 text-sm italic">"ข้าวซอยไก่คือดีงามมาก น่องใหญ่เปื่อยล่อน ซุปรสชาติเหมือนไปกินที่เชียงใหม่แท้ๆ แนะนำเลยค่ะ"</p>
                         <div class="flex items-center gap-3 pt-2 border-t border-zinc-800">
-                            <div class="w-10 h-10 rounded-full bg-brandRed-500/20 text-brandRed-400 flex items-center justify-center font-bold">คุณมิ้นท์</div>
+                            <div class="w-10 h-10 rounded-full bg-brandRed-500/20 text-brandRed-400 flex items-center justify-center font-bold">มิ้นท์</div>
                             <div>
                                 <p class="text-sm font-bold text-white">คุณจิราพร (มิ้นท์)</p>
                                 <p class="text-xs text-slate-500">Local Guide</p>
@@ -275,7 +245,7 @@
                         <div class="flex text-amber-400 text-lg">★★★★★</div>
                         <p class="text-slate-300 text-sm italic">"กะเพราหมูกรอบพริกแห้งเผ็ดจัดจ้านสะใจมาก ปริมาณให้เยอะคุ้มราคา บรรยากาศร้านก็สะอาดสะอ้านครับ"</p>
                         <div class="flex items-center gap-3 pt-2 border-t border-zinc-800">
-                            <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">คุณธนกร</div>
+                            <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">ธนกร</div>
                             <div>
                                 <p class="text-sm font-bold text-white">คุณธนกร</p>
                                 <p class="text-xs text-slate-500">ลูกค้าหน้าร้าน ตลาดต้นไม้ออเงิน2</p>
@@ -286,6 +256,7 @@
             </div>
         </section>
 
+        <!-- SECTION 2: MENU PAGE -->
         <section id="page-menu" class="page-section">
             <div class="bg-zinc-900 border-b border-zinc-800 text-white py-10 px-4 text-center">
                 <h1 class="text-3xl sm:text-4xl font-extrabold text-amber-400">รายการเมนูอาหารทั้งหมด</h1>
@@ -299,23 +270,20 @@
                     <div class="max-w-xl mx-auto">
                         <div class="relative">
                             <input type="text" id="search-input" onkeyup="searchMenu()" placeholder="🔍 ค้นหาชื่อเมนู เช่น ก๋วยเตี๋ยวเรือ, กะเพรา, ข้าวซอย..." class="w-full pl-5 pr-12 py-3.5 rounded-full border border-zinc-700 bg-zinc-900 text-slate-100 focus:outline-none focus:border-amber-400 shadow-sm text-sm sm:text-base placeholder-slate-500">
-                            <button class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-amber-400 font-bold">
-                                🔍
-                            </button>
                         </div>
                     </div>
 
-                    <!-- Filter Tabs -->
+                    <!-- Filter Tabs with updated counts -->
                     <div class="flex flex-wrap justify-center gap-2" id="category-tabs">
-                        <button onclick="filterMenu('all', this)" class="tab-btn bg-amber-500 text-zinc-950 font-bold px-4 py-2 rounded-full text-xs sm:text-sm shadow-md transition">ทั้งหมด</button>
+                        <button onclick="filterMenu('all', this)" class="tab-btn bg-amber-500 text-zinc-950 font-bold px-4 py-2 rounded-full text-xs sm:text-sm shadow-md transition">ทั้งหมด (33)</button>
                         <button onclick="filterMenu('promo', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🔥 โปรโมชัน (3)</button>
-                        <button onclick="filterMenu('soup', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🍜 ก๋วยเตี๋ยวน้ำ (4)</button>
+                        <button onclick="filterMenu('soup', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🍜 ก๋วยเตี๋ยวน้ำ (5)</button>
                         <button onclick="filterMenu('dry', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🥢 ก๋วยเตี๋ยวแห้ง (5)</button>
                         <button onclick="filterMenu('khao-soi', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🍲 ข้าวซอย (3)</button>
-                        <button onclick="filterMenu('pork-leg', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🍖 ข้าวขาหมู (3)</button>
+                        <button onclick="filterMenu('pork-leg', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🍖 ข้าวขาหมู (2)</button>
                         <button onclick="filterMenu('kaprao', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🌶️ กะเพรา (8)</button>
-                        <button onclick="filterMenu('kubkhao', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🥘 กับข้าว (3)</button>
-                        <button onclick="filterMenu('dessert-drink', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🧋 ขนม/เครื่องดื่ม (5)</button>
+                        <button onclick="filterMenu('kubkhao', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🥘 กับข้าว (4)</button>
+                        <button onclick="filterMenu('dessert-drink', this)" class="tab-btn bg-zinc-900 hover:bg-zinc-800 text-slate-200 px-4 py-2 rounded-full text-xs sm:text-sm border border-zinc-800 transition">🧋 ขนม/เครื่องดื่ม (6)</button>
                     </div>
                 </div>
 
@@ -326,6 +294,7 @@
             </div>
         </section>
 
+        <!-- SECTION 3: ABOUT PAGE -->
         <section id="page-about" class="page-section">
             <div class="bg-gradient-to-b from-zinc-900 to-zinc-950 border-b border-zinc-800 text-white py-12 px-4 text-center">
                 <h1 class="text-3xl sm:text-4xl font-extrabold text-amber-400">เกี่ยวกับร้านโรงลวกเส้น</h1>
@@ -346,7 +315,6 @@
                         </p>
                     </div>
                     <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-zinc-800 bg-zinc-900">
-                        <!-- Image Source points to assets/images/about-restaurant.jpg -->
                         <img src="assets/images/about-restaurant.jpg" 
                              onerror="this.src='https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=800&q=80'" 
                              alt="บรรยากาศร้านโรงลวกเส้น" 
@@ -376,7 +344,7 @@
                     </div>
                 </div>
 
-                <!-- Gallery Grid using assets/images/ -->
+                <!-- Gallery Grid -->
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-6 text-center">บรรยากาศร้านและจานเด็ด</h3>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -389,6 +357,7 @@
             </div>
         </section>
 
+        <!-- SECTION 4: CONTACT PAGE -->
         <section id="page-contact" class="page-section">
             <div class="bg-zinc-900 border-b border-zinc-800 text-white py-10 px-4 text-center">
                 <h1 class="text-3xl sm:text-4xl font-extrabold text-amber-400">ติดต่อเรา & ส่งรีวิวความประทับใจ</h1>
@@ -433,72 +402,62 @@
                             <div class="pt-4 border-t border-zinc-800 space-y-3">
                                 <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">สั่งผ่านช่องทางออนไลน์</p>
                                 <div class="grid grid-cols-2 gap-3">
-                                    <a href="https://lin.ee/NVgNocG?openExternalBrowser=1" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
+                                    <a href="https://lineman.line.me/" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
                                         🛵 LINE MAN
                                     </a>
-                                    <a href="https://r.grab.com/g/6-20260921_183754_D44D5505D38849429ACA388603D658F0_MEXMPS-3-C4CYJLDVLTUXNJ" target="_blank" class="bg-green-700 hover:bg-green-600 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
+                                    <a href="https://www.grab.com/th/" target="_blank" class="bg-green-700 hover:bg-green-600 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
                                         🚗 GrabFood
                                     </a>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Map Component -->
+                        <!-- Map -->
                         <div class="bg-zinc-900 p-4 rounded-3xl shadow-sm border border-zinc-800 space-y-3">
                             <div class="flex justify-between items-center px-2">
                                 <h3 class="font-bold text-white">แผนที่ร้าน (Google Maps)</h3>
-                                <a href="https://maps.app.goo.gl/pDKyJDmuYrE1ya528" target="_blank" class="text-xs text-amber-400 font-bold hover:underline">เปิดใน Google Maps &rarr;</a>
+                                <a href="https://maps.google.com" target="_blank" class="text-xs text-amber-400 font-bold hover:underline">เปิดใน Google Maps &rarr;</a>
                             </div>
                             <div class="w-full h-64 bg-zinc-950 rounded-2xl relative overflow-hidden flex items-center justify-center border border-zinc-800">
-                                <div class="text-center p-6 space-y-2">
-                                    <span class="text-4xl">📍</span>
-                                    <p class="font-bold text-amber-400">ร้านโรงลวกเส้น ตลาดต้นไม้ออเงิน2</p>
-                                    <p class="text-xs text-slate-400">สะดวก มีที่จอดรถรองรับบริเวณตลาดต้นไม้</p>
-                                </div>
+                                <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15494.482083818318!2d100.6385!3d13.9015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU0JzA1LjQiTiAxMDDCsDM4JzE4LjYiRQ!5e0!3m2!1sth!2sth!4v1620000000000!5m2!1sth!2sth" allowfullscreen="" loading="lazy"></iframe>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Send Review Form -->
-                    <div class="bg-zinc-900 p-6 sm:p-8 rounded-3xl shadow-sm border border-zinc-800 space-y-6">
-                        <div>
-                            <h2 class="text-2xl font-bold text-amber-400">ส่งรีวิว & คะแนนความพึงพอใจ</h2>
-                            <p class="text-xs text-slate-400 mt-1">แบ่งปันประสบการณ์ความอร่อยเพื่อช่วยเราปรับปรุงบริการให้ดียิ่งขึ้น</p>
-                        </div>
+                    <!-- Contact Form -->
+                    <div class="bg-zinc-900 p-6 sm:p-8 rounded-3xl shadow-sm border border-zinc-800">
+                        <h2 class="text-2xl font-bold text-white mb-2">ส่งข้อความ หรือ รีวิวความอร่อย</h2>
+                        <p class="text-slate-400 text-sm mb-6">ความคิดเห็นของคุณมีค่าสำหรับเราเสมอเพื่อนำไปพัฒนาให้ดียิ่งขึ้น</p>
 
-                        <form id="review-form" onsubmit="handleReviewSubmit(event)" class="space-y-4">
+                        <form onsubmit="handleContactSubmit(event)" class="space-y-4">
                             <div>
-                                <label class="block text-sm font-semibold text-slate-200 mb-1">ชื่อของคุณ <span class="text-amber-500">*</span></label>
-                                <input type="text" id="review-author" required placeholder="เช่น คุณสมชาย ใจดี" class="w-full p-3 rounded-xl border border-zinc-700 bg-zinc-950 text-slate-100 focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm placeholder-slate-600">
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">ชื่อของคุณ</label>
+                                <input type="text" required placeholder="เช่น คุณสมชาย สายกิน" class="w-full px-4 py-3 rounded-xl bg-zinc-950 border border-zinc-800 text-white focus:outline-none focus:border-amber-400 text-sm">
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-slate-200 mb-1">ให้คะแนนร้านเรา <span class="text-amber-500">*</span></label>
-                                <div class="flex items-center gap-2" id="star-rating-container">
-                                    <input type="hidden" id="selected-rating" value="5" required>
-                                    <div class="flex text-2xl text-amber-400 gap-1 cursor-pointer" id="star-rating-buttons">
-                                        <span onclick="setRating(1)" class="star hover:scale-110 transition">★</span>
-                                        <span onclick="setRating(2)" class="star hover:scale-110 transition">★</span>
-                                        <span onclick="setRating(3)" class="star hover:scale-110 transition">★</span>
-                                        <span onclick="setRating(4)" class="star hover:scale-110 transition">★</span>
-                                        <span onclick="setRating(5)" class="star hover:scale-110 transition">★</span>
-                                    </div>
-                                    <span id="rating-text" class="text-xs text-amber-400 font-bold ml-2">5.0 / 5 (ประทับใจมาก)</span>
-                                </div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">เบอร์โทรศัพท์ / อีเมล</label>
+                                <input type="text" required placeholder="08X-XXX-XXXX หรือ email@example.com" class="w-full px-4 py-3 rounded-xl bg-zinc-950 border border-zinc-800 text-white focus:outline-none focus:border-amber-400 text-sm">
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-slate-200 mb-1">เมนูที่รับประทาน</label>
-                                <input type="text" placeholder="เช่น ก๋วยเตี๋ยวเรือเนื้อโพนยางคำ, ข้าวซอยไก่" class="w-full p-3 rounded-xl border border-zinc-700 bg-zinc-950 text-slate-100 focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm placeholder-slate-600">
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">ให้คะแนนความประทับใจ</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-zinc-950 border border-zinc-800 text-amber-400 font-bold focus:outline-none focus:border-amber-400 text-sm">
+                                    <option value="5">⭐⭐⭐⭐⭐ ประทับใจมากที่สุด (5/5)</option>
+                                    <option value="4">⭐⭐⭐⭐ ดีมาก (4/5)</option>
+                                    <option value="3">⭐⭐⭐ ปานกลาง (3/5)</option>
+                                    <option value="2">⭐⭐ ควรปรับปรุง (2/5)</option>
+                                    <option value="1">⭐ ไม่ประทับใจ (1/5)</option>
+                                </select>
                             </div>
 
                             <div>
-                                <label class="block text-sm font-semibold text-slate-200 mb-1">ความคิดเห็นเกี่ยวกับอาหารและบริการ <span class="text-amber-500">*</span></label>
-                                <textarea rows="4" required placeholder="พิมพ์ข้อความรีวิวของคุณที่นี่..." class="w-full p-3 rounded-xl border border-zinc-700 bg-zinc-950 text-slate-100 focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm placeholder-slate-600"></textarea>
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">ข้อความ / คำติชม</label>
+                                <textarea rows="4" required placeholder="พิมพ์ข้อความของคุณที่นี่..." class="w-full px-4 py-3 rounded-xl bg-zinc-950 border border-zinc-800 text-white focus:outline-none focus:border-amber-400 text-sm"></textarea>
                             </div>
 
-                            <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold py-3.5 rounded-xl transition shadow-lg text-base">
-                                ส่งรีวิวความประทับใจ ⭐
+                            <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold py-3.5 rounded-xl shadow-lg transition text-base mt-2">
+                                🚀 ส่งข้อความติดต่อ
                             </button>
                         </form>
                     </div>
@@ -509,496 +468,645 @@
 
     </main>
 
-    <footer class="bg-zinc-900 text-slate-300 border-t border-zinc-800 pt-10 pb-6">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 pb-8 border-b border-zinc-800 text-sm">
-            <div class="space-y-3">
-                <div class="text-2xl font-extrabold text-amber-400 flex items-center gap-2">
-                    <span>🍜</span> โรงลวกเส้น
-                </div>
-                <p class="text-slate-400 leading-relaxed text-xs">
-                    ร้านก๋วยเตี๋ยวเรือรสเด็ด ข้าวซอยเหนือ ข้าวขาหมู และผัดกะเพราจัดจ้าน การันตีความอร่อยเข้มข้น สะอาด สดใหม่ทุกชาม
-                </p>
+    <!-- Footer -->
+    <footer class="bg-zinc-900 border-t border-zinc-800 text-slate-400 text-sm py-8 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <div>
+                <p class="font-bold text-white text-base">🍜 ร้านโรงลวกเส้น</p>
+                <p class="text-xs text-slate-500 mt-1">ตลาดต้นไม้ออเงิน2 แขวงออเงิน เขตสายไหม กรุงเทพมหานคร</p>
             </div>
-
-            <div class="space-y-2">
-                <p class="font-bold text-white text-base">เมนูลัด</p>
-                <ul class="space-y-1.5 text-xs text-slate-400">
-                    <li><button onclick="navigateTo('home')" class="hover:text-amber-400 transition">หน้าแรก</button></li>
-                    <li><button onclick="navigateTo('menu')" class="hover:text-amber-400 transition">รายการเมนูอาหาร</button></li>
-                    <li><button onclick="navigateTo('about')" class="hover:text-amber-400 transition">เกี่ยวกับร้านโรงลวกเส้น</button></li>
-                    <li><button onclick="navigateTo('contact')" class="hover:text-amber-400 transition">ติดต่อเรา & แผนที่</button></li>
-                </ul>
+            <div>
+                <p class="text-xs text-slate-400">โทรศัพท์: <span class="text-amber-400 font-semibold">096 994 9639</span></p>
+                <p class="text-xs text-slate-500 mt-1">&copy; 2026 Rong Luak Sen. All rights reserved.</p>
             </div>
-
-            <div class="space-y-2 text-xs text-slate-400">
-                <p class="font-bold text-white text-base">เวลาเปิดบริการ</p>
-                <p>เปิดให้บริการทุกวันไม่มีวันหยุด</p>
-                <p class="text-amber-400 font-semibold">09:00 น. - 17:00 น.</p>
-                <p class="pt-2">📍 ตลาดต้นไม้ออเงิน2 แขวงออเงิน เขตสายไหม</p>
-            </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-4 text-center pt-6 text-xs text-slate-500">
-            © 2026 ร้านโรงลวกเส้น (Rong Luak Sen). All rights reserved.
         </div>
     </footer>
 
-    <div id="custom-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
-        <div class="bg-zinc-900 border border-zinc-800 text-slate-100 rounded-3xl max-w-md w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
-            <button onclick="closeCustomModal()" class="absolute top-4 right-4 bg-zinc-800 text-slate-400 hover:text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">&times;</button>
-            
-            <h3 id="modal-title" class="text-xl font-bold text-amber-400 mb-1 pr-6">ชื่อเมนู</h3>
-            <p id="modal-price" class="text-lg font-bold text-amber-500 mb-4">0 ฿</p>
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex justify-end">
+        <div class="bg-zinc-900 w-full max-w-md h-full shadow-2xl border-l border-zinc-800 flex flex-col justify-between p-6 overflow-y-auto">
+            <div>
+                <div class="flex justify-between items-center border-b border-zinc-800 pb-4">
+                    <h2 class="text-xl font-extrabold text-white flex items-center gap-2">🛒 ตะกร้าอาหารของคุณ</h2>
+                    <button onclick="toggleCartModal()" class="text-slate-400 hover:text-white text-2xl font-bold">&times;</button>
+                </div>
 
-            <!-- Option: Noodle Type -->
-            <div id="noodle-options-group" class="mb-4 hidden bg-zinc-950 p-3.5 rounded-2xl border border-zinc-800">
-                <label class="block text-sm font-bold text-slate-200 mb-2">เลือกประเภทเส้น <span class="text-amber-500">*</span></label>
-                <select id="select-noodle" class="w-full p-2.5 border border-zinc-700 bg-zinc-900 text-slate-100 rounded-xl focus:ring-2 focus:ring-amber-500 text-sm">
-                    <option value="เส้นเล็ก">เส้นเล็ก (เหนียวนุ่ม)</option>
-                    <option value="เส้นใหญ่">เส้นใหญ่</option>
-                    <option value="เส้นหมี่">เส้นหมี่ขาว</option>
-                    <option value="บะหมี่">บะหมี่เหลือง</option>
-                    <option value="วุ้นเส้น">วุ้นเส้น</option>
-                    <option value="มาม่า">มาม่า (+5 ฿)</option>
-                </select>
-            </div>
-
-            <!-- Option: Spicy Level -->
-            <div id="spicy-options-group" class="mb-4">
-                <label class="block text-sm font-bold text-slate-200 mb-2">ระดับความเผ็ด</label>
-                <div class="grid grid-cols-2 gap-2 text-xs sm:text-sm">
-                    <label class="flex items-center space-x-2 border border-zinc-800 bg-zinc-950 p-2.5 rounded-xl cursor-pointer hover:border-amber-500/50">
-                        <input type="radio" name="spicy" value="ไม่เผ็ด" class="text-amber-500 focus:ring-amber-500 bg-zinc-900 border-zinc-700">
-                        <span>ไม่เผ็ด</span>
-                    </label>
-                    <label class="flex items-center space-x-2 border border-zinc-800 bg-zinc-950 p-2.5 rounded-xl cursor-pointer hover:border-amber-500/50">
-                        <input type="radio" name="spicy" value="เผ็ดน้อย" class="text-amber-500 focus:ring-amber-500 bg-zinc-900 border-zinc-700">
-                        <span>เผ็ดน้อย</span>
-                    </label>
-                    <label class="flex items-center space-x-2 border border-zinc-800 bg-zinc-950 p-2.5 rounded-xl cursor-pointer hover:border-amber-500/50">
-                        <input type="radio" name="spicy" value="เผ็ดปกติ" checked class="text-amber-500 focus:ring-amber-500 bg-zinc-900 border-zinc-700">
-                        <span>เผ็ดปกติ</span>
-                    </label>
-                    <label class="flex items-center space-x-2 border border-zinc-800 bg-zinc-950 p-2.5 rounded-xl cursor-pointer hover:border-amber-500/50">
-                        <input type="radio" name="spicy" value="เผ็ดมาก" class="text-amber-500 focus:ring-amber-500 bg-zinc-900 border-zinc-700">
-                        <span>เผ็ดมาก 🔥</span>
-                    </label>
+                <div id="cart-items" class="py-4 space-y-4">
+                    <!-- Dynamic Cart items -->
                 </div>
             </div>
 
-            <!-- Option: Toppings -->
-            <div id="topping-options-group" class="mb-6">
-                <label class="block text-sm font-bold text-slate-200 mb-2">เพิ่มท็อปปิ้งความอร่อย</label>
-                <div class="space-y-2 text-xs sm:text-sm">
-                    <label class="flex justify-between items-center border border-zinc-800 bg-zinc-950 p-2.5 rounded-xl cursor-pointer hover:border-amber-500/50">
-                        <div class="flex items-center space-x-2">
-                            <input type="checkbox" value="ไข่ยางมะตอย" data-price="10" class="topping-cb text-amber-500 rounded bg-zinc-900 border-zinc-700">
-                            <span>ไข่ต้มยางมะตอย</span>
-                        </div>
-                        <span class="text-amber-400 font-semibold">+10 ฿</span>
-                    </label>
-                    <label class="flex justify-between items-center border border-zinc-800 bg-zinc-950 p-2.5 rounded-xl cursor-pointer hover:border-amber-500/50">
-                        <div class="flex items-center space-x-2">
-                            <input type="checkbox" value="กากหมูกรอบ" data-price="15" class="topping-cb text-amber-500 rounded bg-zinc-900 border-zinc-700">
-                            <span>กากหมูกรอบเจียว</span>
-                        </div>
-                        <span class="text-amber-400 font-semibold">+15 ฿</span>
-                    </label>
-                    <label class="flex justify-between items-center border border-zinc-800 bg-zinc-950 p-2.5 rounded-xl cursor-pointer hover:border-amber-500/50">
-                        <div class="flex items-center space-x-2">
-                            <input type="checkbox" value="ลูกชิ้นเพิ่ม" data-price="15" class="topping-cb text-amber-500 rounded bg-zinc-900 border-zinc-700">
-                            <span>เพิ่มลูกชิ้น (4 ลูก)</span>
-                        </div>
-                        <span class="text-amber-400 font-semibold">+15 ฿</span>
-                    </label>
+            <div class="border-t border-zinc-800 pt-4 space-y-4">
+                <div class="flex justify-between text-lg font-bold text-white">
+                    <span>ราคารวมทั้งหมด:</span>
+                    <span id="cart-total" class="text-amber-400">0 ฿</span>
                 </div>
-            </div>
-
-            <button onclick="confirmAddToCart()" class="w-full bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold py-3.5 rounded-2xl transition shadow-lg text-base">
-                เพิ่มลงในตะกร้า 🛒
-            </button>
-        </div>
-    </div>
-
-    <div id="cart-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
-        <div class="bg-zinc-900 border border-zinc-800 text-slate-100 rounded-3xl max-w-lg w-full p-6 shadow-2xl relative max-h-[90vh] flex flex-col">
-            <button onclick="toggleCartModal()" class="absolute top-4 right-4 bg-zinc-800 text-slate-400 hover:text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">&times;</button>
-            
-            <h3 class="text-2xl font-bold text-amber-400 mb-4 border-b border-zinc-800 pb-3 flex items-center gap-2">
-                <span>🛒</span> ตะกร้าสินค้าของคุณ
-            </h3>
-
-            <!-- Cart Items List -->
-            <div id="cart-items" class="flex-1 overflow-y-auto space-y-3 mb-4 pr-1">
-                <!-- Rendered dynamically -->
-            </div>
-
-            <!-- Cart Footer Summary -->
-            <div class="border-t border-zinc-800 pt-4 space-y-3 bg-zinc-900">
-                <div class="flex justify-between text-lg font-bold">
-                    <span>ยอดรวมทั้งหมด:</span>
-                    <span id="cart-total" class="text-amber-400 text-xl font-extrabold">0 ฿</span>
-                </div>
-                
-                <button onclick="orderViaLineMan()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-2xl shadow-lg flex items-center justify-center gap-2 transition text-base">
-                    <span>🛵 สั่งซื้อทันทีผ่าน LINE MAN</span>
+                <button onclick="checkout()" class="w-full bg-amber-500 hover:bg-amber-400 text-zinc-950 font-extrabold py-3.5 rounded-xl shadow-lg transition text-center">
+                    ✅ ยืนยันการสั่งซื้อ
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- Toast Notification Alert -->
-    <div id="toast-msg" class="fixed bottom-5 right-5 bg-zinc-800 text-white border border-zinc-700 px-5 py-3 rounded-2xl shadow-2xl hidden z-50 flex items-center gap-2 text-sm">
-        <span id="toast-text">ทำรายการสำเร็จ</span>
-    </div>
-
+    <!-- JavaScript Control Logic -->
     <script>
-        /*
-         * =========================================================================
-         * MENU DATA ARRAY - Referencing images inside assets/images/
-         * =========================================================================
-         * หมายเหตุ: img จะเรียกไฟล์จาก assets/images/ หากไม่มีไฟล์จะดึงระบบสำรอง Unsplash อัตโนมัติ
-         */
+        /* ========================================================================
+           ปรับเปลี่ยนจำนวนเมนูอาหารเรียบร้อยแล้ว:
+           - ก๋วยเตี๋ยวน้ำ: 5 เมนู
+           - ก๋วยเตี๋ยวแห้ง: 5 เมนู
+           - ข้าวซอย: 3 เมนู
+           - ข้าวขาหมู: 2 เมนู
+           - กะเพรา: 8 เมนู
+           - กับข้าว: 4 เมนู
+           - ขนม/เครื่องดื่ม: 6 เมนู
+        ======================================================================== */
         const menuData = [
-            { id: 1, name: "เซตคู่หูสุดคุ้ม: ก๋วยเตี๋ยวเรือ 2 ชาม + เกี๊ยวทอด", price: 129, category: "promo", isNoodle: true, img: "assets/images/promo-set-1.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "🔥 โปรสุดคุ้ม", featured: true },
-            { id: 2, name: "เซตกะเพราถาด + ไข่ดาว 2 ฟอง + ชาเย็น 2 แก้ว", price: 159, category: "promo", isNoodle: false, img: "assets/images/promo-set-2.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "🔥 ขายดีประจำสัปดาห์", featured: true },
-            { id: 3, name: "เซตข้าวซอยไก่ + แคบหมู + น้ำอัดลม", price: 119, category: "promo", isNoodle: false, img: "assets/images/promo-set-3.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "🔥 โปรโมชันพิเศษ", featured: true },
-            { id: 4, name: "ก๋วยเตี๋ยวเรือน้ำตกหมูสด/หมูตุ๋น", price: 55, category: "soup", isNoodle: true, img: "assets/images/menu-boat-noodle.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เมนูแนะนำ", featured: true },
-            { id: 5, name: "ก๋วยเตี๋ยวเรือน้ำตกเนื้อโพนยางคำ", price: 65, category: "soup", isNoodle: true, img: "assets/images/noodle-beef.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เข้มข้น" },
-            { id: 6, name: "ก๋วยเตี๋ยวต้มยำมะนาวสดหมูสับ", price: 60, category: "soup", isNoodle: true, img: "assets/images/noodle-tomyum.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "แซ่บสดชื่น" },
-            { id: 7, name: "ก๋วยเตี๋ยวน้ำใสหมูเด้งเกี๊ยวกรอบ", price: 50, category: "soup", isNoodle: true, img: "assets/images/noodle-clear.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เด็กทานได้" },
-            { id: 8, name: "บะหมี่แห้งยำโบราณทรงเครื่อง", price: 60, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-1.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "ยอดนิยม" },
-            { id: 9, name: "ก๋วยเตี๋ยวเรือแห้งซีอิ๊วดำหมูตุ๋น", price: 55, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-2.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "กลมกล่อม" },
-            { id: 10, name: "ก๋วยเตี๋ยวแห้งต้มยำไข่มะตอย", price: 65, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-3.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "เด็ดมาก" },
-            { id: 11, name: "เส้นใหญ่แห้งเนื้อเปื่อยชิ้นสด", price: 70, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-4.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เนื้อนุ่ม" },
-            { id: 12, name: "วุ้นเส้นแห้งต้มยำทะเล", price: 75, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-5.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "กุ้งหมึกแน่น" },
-            { id: 13, name: "ข้าวซอยไก่น่องโตสูตรเหนือ", price: 70, category: "khao-soi", isNoodle: false, img: "assets/images/menu-khao-soi.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "สูตรเชียงใหม่" },
-            { id: 14, name: "ข้าวซอยเนื้อน่องลายตุ๋น", price: 85, category: "khao-soi", isNoodle: false, img: "assets/images/khao-soi-beef.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "เนื้อลายเข้มข้น" },
-            { id: 15, name: "ข้าวซอยหมูกรอบทรงเครื่อง", price: 80, category: "khao-soi", isNoodle: false, img: "assets/images/khao-soi-pork.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "หมูกรอบเด็ด" },
-            { id: 16, name: "ข้าวขาหมูเนื้อหนัง+ไข่ต้ม", price: 65, category: "pork-leg", isNoodle: false, img: "assets/images/menu-pork-leg.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "ตุ๋นเข้าเนื้อ" },
-            { id: 17, name: "ข้าวคาคากิ (คากิล้วนละลายในปาก)", price: 75, category: "pork-leg", isNoodle: false, img: "assets/images/pork-leg-kaki.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "เอ็นนุ่ม" },
-            { id: 18, name: "ข้าวขาหมูกรอบราดซอสฉ่ำ", price: 75, category: "pork-leg", isNoodle: false, img: "assets/images/pork-leg-crispy.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "เมนูประยุกต์" },
-            { id: 19, name: "ผัดกะเพราหมูสับแท้ (ไม่ใส่ผักอื่น)", price: 55, category: "kaprao", isNoodle: false, img: "assets/images/menu-kaprao.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "ดั้งเดิม" },
-            { id: 20, name: "ผัดกะเพราหมูกรอบพริกแห้ง", price: 65, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-crispy-pork.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "ยอดฮิต" },
-            { id: 21, name: "ผัดกะเพราเนื้อสับพริกสดจัดจ้าน", price: 70, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-beef.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "รสจัด" },
-            { id: 22, name: "ผัดกะเพราไก่ชิ้นเนื้อนุ่ม", price: 55, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-chicken.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "อร่อยเบาๆ" },
-            { id: 23, name: "ผัดกะเพราทะเลรวมมิตร (กุ้ง+หมึก)", price: 80, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-seafood.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "สดจากทะเล" },
-            { id: 24, name: "ผัดกะเพราขาหมูตุ๋นราดข้าว", price: 70, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-stewed-pork.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "หอมนุ่ม" },
-            { id: 25, name: "ผัดกะเพราไข่เยี่ยวม้าหมูสับ", price: 65, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-century-egg.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "กลมกล่อม" },
-            { id: 26, name: "ผัดกะเพราเต้าหู้หมูสับ", price: 55, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-tofu.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "สุขภาพ" },
-            { id: 27, name: "กับข้าว: ต้มแซ่บกระดูกหมูอ่อน", price: 120, category: "kubkhao", isNoodle: false, img: "assets/images/kubkhao-tomsap.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "แซ่บนัว" },
-            { id: 28, name: "กับข้าว: ขาหมูเนื้อหนังจานใหญ่", price: 150, category: "kubkhao", isNoodle: false, img: "assets/images/kubkhao-porkleg.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "ทานได้ 2-3 คน" },
-            { id: 29, name: "กับข้าว: ผัดกะเพราหมูกรอบจานเปล", price: 140, category: "kubkhao", isNoodle: false, img: "assets/images/kubkhao-kaprao.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "จุใจ" },
-            { id: 30, name: "เฉาก๊วยชากังราวโบราณนมสด", price: 30, category: "dessert-drink", isNoodle: false, img: "assets/images/dessert-grass-jelly.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "หวานเย็น" },
-            { id: 31, name: "ขนมถ้วยโบราณ (คู่ละ)", price: 20, category: "dessert-drink", isNoodle: false, img: "assets/images/dessert-kanom-tuay.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "กะทิหอม" },
-            { id: 32, name: "ชาไทยเย็นสูตรเข้มข้น", price: 25, category: "dessert-drink", isNoodle: false, img: "assets/images/drink-thai-tea.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "ชงสด" },
-            { id: 33, name: "น้ำโอเลี้ยงโบราณ / ชาดำเย็น", price: 20, category: "dessert-drink", isNoodle: false, img: "assets/images/drink-black-coffee.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "สดชื่น" },
-            { id: 34, name: "น้ำอัดลม + น้ำแข็งแก้ว", price: 20, category: "dessert-drink", isNoodle: false, img: "assets/images/drink-soda.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "ดับกระหาย" }
+            // --- 1. ก๋วยเตี๋ยวน้ำ (soup) - 5 เมนู ---
+            {
+                id: 1,
+                name: "ก๋วยเตี๋ยวเรือน้ำตกหมูสด/เปื่อย",
+                category: "soup",
+                price: 50,
+                image: "menu-boat-noodle.jpg",
+                description: "น้ำซุปเคี่ยวเข้มข้น หอมกลิ่นพริกคั่วและเครื่องเทศเฉพาะตัว",
+                isFeatured: true,
+                isPromo: false
+            },
+            {
+                id: 2,
+                name: "ก๋วยเตี๋ยวเรือน้ำตกเนื้อโพนยางคำ",
+                category: "soup",
+                price: 70,
+                image: "menu-boat-noodle-beef.jpg",
+                description: "เนื้อสไลซ์นุ่มละลายในปาก ซุปเรือเข้มข้นรสเด็ดจัดจ้าน",
+                isFeatured: true,
+                isPromo: true
+            },
+            {
+                id: 3,
+                name: "ก๋วยเตี๋ยวต้มยำโบราณทรงเครื่อง",
+                category: "soup",
+                price: 60,
+                image: "menu-tomyum.jpg",
+                description: "มะนาวแท้ ถั่วคั่วใหม่ พริกป่นหอม ปรุงครบรสแซ่บสะใจ",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 4,
+                name: "ก๋วยเตี๋ยวเย็นตาโฟเครื่องแน่น",
+                category: "soup",
+                price: 60,
+                image: "menu-yentafo.jpg",
+                description: "ซอสเย็นตาโฟสูตรเด็ดทำเอง เครื่องปลาแน่นสดใหม่ไร้กลิ่นคาว",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 5,
+                name: "ก๋วยเตี๋ยวน้ำใสหมูสับต้มยำ",
+                category: "soup",
+                price: 55,
+                image: "menu-clear-tomyum.jpg",
+                description: "น้ำซุปใสกลมกล่อม หมูสับจุกๆ ปรุงรสด้วยพริกคั่วและมะนาวสดแท้",
+                isFeatured: false,
+                isPromo: false
+            },
+
+            // --- 2. ก๋วยเตี๋ยวแห้ง (dry) - 5 เมนู ---
+            {
+                id: 6,
+                name: "ก๋วยเตี๋ยวเรือแห้งหมูย่างพริกคั่ว",
+                category: "dry",
+                price: 55,
+                image: "menu-dry-noodle.jpg",
+                description: "คลุกซีอิ๊วดำและซอสสูตรพิเศษ คลุกซอสเข้มข้นอร่อยไม่ต้องปรุง",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 7,
+                name: "บะหมี่แห้งต้มยำหมูกรอบ",
+                category: "dry",
+                price: 65,
+                image: "menu-dry-bami.jpg",
+                description: "เส้นบะหมี่ไข่เหนียวนุ่ม ท็อปด้วยหมูกรอบหนังกรอบกร๊วบ",
+                isFeatured: true,
+                isPromo: false
+            },
+            {
+                id: 8,
+                name: "เส้นเล็กแห้งเนื้อเปื่อยซอสเข้มข้น",
+                category: "dry",
+                price: 70,
+                image: "menu-dry-beef.jpg",
+                description: "เนื้อเปื่อยละลาย คลุกซอสรสเด็ดสูตรโรงลวกเส้น",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 9,
+                name: "วุ้นเส้นแห้งต้มยำทะเล",
+                category: "dry",
+                price: 75,
+                image: "menu-dry-seafood.jpg",
+                description: "กุ้งสด หมึกสด คลุกต้มยำแห้งรสจัดจ้าน",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 10,
+                name: "เกี๊ยวกรอบต้มยำแห้งทรงเครื่อง",
+                category: "dry",
+                price: 55,
+                image: "menu-dry-wonton.jpg",
+                description: "เกี๊ยวทองกรอบๆ คลุกซอสเครื่องต้มยำและหมูสับ",
+                isFeatured: false,
+                isPromo: false
+            },
+
+            // --- 3. ข้าวซอย (khao-soi) - 3 เมนู ---
+            {
+                id: 11,
+                name: "ข้าวซอยไก่สูตรเชียงใหม่แท้",
+                category: "khao-soi",
+                price: 65,
+                image: "menu-khao-soi.jpg",
+                description: "น่องไก่ใหญ่เปื่อยล่อน น้ำแกงเข้มข้นหอมกะทิและพริกแกงเหนือ",
+                isFeatured: true,
+                isPromo: true
+            },
+            {
+                id: 12,
+                name: "ข้าวซอยเนื้อน่องลายตุ๋น",
+                category: "khao-soi",
+                price: 80,
+                image: "menu-khao-soi-beef.jpg",
+                description: "เนื้อน่องลายเอ็นแทรก ตุ๋นจนนุ่มเข้าเนื้อในน้ำแกงข้าวซอย",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 13,
+                name: "ข้าวซอยหมูตุ๋นทรงเครื่อง",
+                category: "khao-soi",
+                price: 70,
+                image: "menu-khao-soi-pork.jpg",
+                description: "หมูตุ๋นชิ้นโตรสเข้มข้น เสิร์ฟพร้อมผักกาดดองและหอมแดงสด",
+                isFeatured: false,
+                isPromo: false
+            },
+
+            // --- 4. ข้าวขาหมู (pork-leg) - 2 เมนู ---
+            {
+                id: 14,
+                name: "ข้าวขาหมูเนื้อหนังไส้ไข่",
+                category: "pork-leg",
+                price: 60,
+                image: "menu-pork-leg.jpg",
+                description: "คาดสไลซ์เคี่ยวเข้าเนื้อ หนังนุ่มละลาย รสเค็มหวานกลมกล่อม",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 15,
+                name: "ข้าวคาคากิตุ๋นยาจีน",
+                category: "pork-leg",
+                price: 65,
+                image: "menu-kakagi.jpg",
+                description: "คาคากิกรุบกรอบ หนังและเอ็นเคี่ยวจนเปื่อยนุ่มละมุน",
+                isFeatured: false,
+                isPromo: false
+            },
+
+            // --- 5. กะเพรา (kaprao) - 8 เมนู ---
+            {
+                id: 16,
+                name: "ผัดกะเพราหมูกรอบพริกแห้ง",
+                category: "kaprao",
+                price: 65,
+                image: "menu-kaprao.jpg",
+                description: "ผัดแห้งหอมกลิ่นกระทะ พริกแห้งเผ็ดร้อน หมูกรอบกรอบนาน",
+                isFeatured: false,
+                isPromo: true
+            },
+            {
+                id: 17,
+                name: "ผัดกะเพราหมูสับโบราณ",
+                category: "kaprao",
+                price: 50,
+                image: "menu-kaprao-minced.jpg",
+                description: "กะเพราแท้ไม่ใส่ผักอื่น ผัดแห้งๆ รสเด็ดจัดจ้าน",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 18,
+                name: "ผัดกะเพราเนื้อเปื่อยผัดแห้ง",
+                category: "kaprao",
+                price: 75,
+                image: "menu-kaprao-beef.jpg",
+                description: "เนื้อเปื่อยต้มยำนำมาผัดกะเพราพริกสดหอมฟ้อง",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 19,
+                name: "ผัดกะเพราขาหมูรสจัดจ้าน",
+                category: "kaprao",
+                price: 65,
+                image: "menu-kaprao-porkleg.jpg",
+                description: "เนื้อขาหมูนุ่มๆ ผัดรสกะเพราพริกสดเผ็ดร้อนเข้ากันสุดๆ",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 20,
+                name: "ผัดกะเพราทะเลรวมมิตร",
+                category: "kaprao",
+                price: 80,
+                image: "menu-kaprao-seafood.jpg",
+                description: "กุ้งสด หมึกสด ตัวโตๆ ผัดกะเพรารสเด็ดสะใจ",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 21,
+                name: "ผัดกะเพราหมูชิ้นไข่ดาวเยิ้ม",
+                category: "kaprao",
+                price: 60,
+                image: "menu-kaprao-pork.jpg",
+                description: "หมูนุ่มผัดกะเพรา เสิร์ฟคู่ไข่ดาวขอบกรอบไข่แดงเยิ้ม",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 22,
+                name: "ผัดกะเพราไข่เยี่ยวม้าหมูสับ",
+                category: "kaprao",
+                price: 65,
+                image: "menu-kaprao-egg.jpg",
+                description: "ไข่เยี่ยวม้าทอดกรอบ ผัดกะเพราหมูสับรสเข้มข้น",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 23,
+                name: "ผัดกะเพราเนื้อสับพริกขี้หนูสวน",
+                category: "kaprao",
+                price: 70,
+                image: "menu-kaprao-minced-beef.jpg",
+                description: "เนื้อสับโคขุน ผัดพริกขี้หนูสวนหอมเผ็ดร้อนแรง",
+                isFeatured: false,
+                isPromo: false
+            },
+
+            // --- 6. กับข้าว (kubkhao) - 4 เมนู ---
+            {
+                id: 24,
+                name: "เกาเหลาหมูตุ๋นต้มยำ (กับข้าว)",
+                category: "kubkhao",
+                price: 70,
+                image: "menu-gaoleo-pork.jpg",
+                description: "เครื่องแน่นเต็มชาม น้ำซุปต้มยำเข้มข้น ทานกับข้าวสวยร้อนๆ",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 25,
+                name: "ขาหมูจานใหญ่รวมมิตร (กับข้าว)",
+                category: "kubkhao",
+                price: 150,
+                image: "menu-porkleg-dish.jpg",
+                description: "ขาหมูเนื้อ หนัง ไส้ คาคากิ จานใหญ่สำหรับทานร่วมกัน",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 26,
+                name: "ต้มยำหัวปลาหม้อไฟ (กับข้าว)",
+                category: "kubkhao",
+                price: 180,
+                image: "menu-tomyum-fish.jpg",
+                description: "ต้มยำรสแซ่บเครื่องสมุนไพรแน่น หม้อไฟร้อนๆ",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 27,
+                name: "ผัดผักบุ้งไฟแดงหมูกรอบ (กับข้าว)",
+                category: "kubkhao",
+                price: 90,
+                image: "menu-stirfry-morningglory.jpg",
+                description: "ผักบุ้งสดกรอบ ผัดไฟแดงหอมกลิ่นกระทะ ท็อปด้วยหมูกรอบ",
+                isFeatured: false,
+                isPromo: false
+            },
+
+            // --- 7. ขนม / เครื่องดื่ม (dessert-drink) - 6 เมนู ---
+            {
+                id: 28,
+                name: "เฉาก๊วยชากังราวชาเย็น",
+                category: "dessert-drink",
+                price: 35,
+                image: "menu-dessert.jpg",
+                description: "เฉาก๊วยหนึบหนับ หอมหวานเย็นสดชื่นชะลอความเผ็ด",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 29,
+                name: "ชาไทยเย็นเข้มข้นสูตรโบราณ",
+                category: "dessert-drink",
+                price: 30,
+                image: "menu-thai-tea.jpg",
+                description: "ชาไทยหอมกลิ่นชาแท้ ชงสดใหม่หวานมันกำลังดี",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 30,
+                name: "น้ำกระเจี๊ยบพุทราจีน",
+                category: "dessert-drink",
+                price: 25,
+                image: "menu-roselle.jpg",
+                description: "เปรี้ยวหวานลงตัว ต้มสดใหม่ดับกระหายคลายร้อน",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 31,
+                name: "น้ำเก๊กฮวยตราเสือ",
+                category: "dessert-drink",
+                price: 25,
+                image: "menu-chrysanthemum.jpg",
+                description: "หอมเก๊กฮวยแท้ หวานน้อยแก้ร้อนในได้ดีเยี่ยม",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 32,
+                name: "สละลอยแก้วหิมะ",
+                category: "dessert-drink",
+                price: 40,
+                image: "menu-sala.jpg",
+                description: "สละสุราษฎร์หวานเปรี้ยว ลอยแก้วใส่น้ำแข็งใสเย็นชื่นใจ",
+                isFeatured: false,
+                isPromo: false
+            },
+            {
+                id: 33,
+                name: "เฉาก๊วยนมสดน้ำตาลอ้อย",
+                category: "dessert-drink",
+                price: 35,
+                image: "menu-grassjelly-milk.jpg",
+                description: "เฉาก๊วยเนื้อหนึบ ใส่นมสดหอมมันราดน้ำตาลอ้อยหอมหวาน",
+                isFeatured: false,
+                isPromo: false
+            }
         ];
 
-        /* --- Application State --- */
+        // State Management
         let cart = [];
-        let selectedMenu = null;
+        let activeCategory = 'all';
 
-        /* --- SPA Routing Engine --- */
+        // Helper Function ในการดึง Path รูปภาพ
+        function getImagePath(fileName) {
+            return `assets/images/${fileName}`;
+        }
+
+        // Initialize App
+        document.addEventListener("DOMContentLoaded", () => {
+            navigateTo('home');
+            renderFeaturedMenu();
+            renderMenuGrid(menuData);
+        });
+
+        // Navigation Controller
         function navigateTo(pageId) {
-            const sections = document.querySelectorAll('.page-section');
-            sections.forEach(sec => sec.classList.remove('active'));
-
-            const target = document.getElementById(`page-${pageId}`);
-            if (target) {
-                target.classList.add('active');
+            document.querySelectorAll('.page-section').forEach(sec => {
+                sec.classList.remove('active');
+            });
+            
+            const targetSection = document.getElementById(`page-${pageId}`);
+            if (targetSection) {
+                targetSection.classList.add('active');
             }
 
+            // Update Desktop Nav styles
             document.querySelectorAll('.nav-btn').forEach(btn => {
-                btn.classList.remove('bg-amber-500', 'text-zinc-950', 'font-bold');
+                btn.classList.remove('text-amber-400', 'font-bold', 'bg-zinc-800');
                 btn.classList.add('text-slate-300');
             });
-            const activeNavBtn = document.getElementById(`nav-${pageId}`);
-            if (activeNavBtn) {
-                activeNavBtn.classList.add('bg-amber-500', 'text-zinc-950', 'font-bold');
-                activeNavBtn.classList.remove('text-slate-300');
-            }
-
-            document.querySelectorAll('.mobile-nav-btn').forEach(btn => {
-                btn.classList.remove('bg-zinc-800', 'text-amber-400', 'font-bold');
-            });
-            const activeMobileBtn = document.getElementById(`mobile-nav-${pageId}`);
-            if (activeMobileBtn) {
-                activeMobileBtn.classList.add('bg-zinc-800', 'text-amber-400', 'font-bold');
+            const activeNav = document.getElementById(`nav-${pageId}`);
+            if (activeNav) {
+                activeNav.classList.add('text-amber-400', 'font-bold', 'bg-zinc-800');
             }
 
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
+        // Toggle Mobile Navigation
         function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
         }
 
-        /* --- Menu Rendering Functions --- */
-        function renderFeaturedHomeMenu() {
-            const featuredGrid = document.getElementById('home-featured-grid');
-            if (!featuredGrid) return;
+        // Render Home Page Featured Items
+        function renderFeaturedMenu() {
+            const container = document.getElementById('home-featured-grid');
+            if (!container) return;
 
-            const featuredItems = menuData.filter(item => item.featured).slice(0, 4);
-            featuredGrid.innerHTML = '';
-
-            featuredItems.forEach(item => {
-                const card = createMenuCardElement(item);
-                featuredGrid.appendChild(card);
-            });
+            const featured = menuData.filter(item => item.isFeatured);
+            container.innerHTML = featured.map(item => `
+                <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md flex flex-col justify-between group hover:border-amber-500/50 transition duration-300">
+                    <div class="relative h-48 overflow-hidden bg-zinc-950">
+                        <img src="${getImagePath(item.image)}" 
+                             onerror="this.src='https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80'" 
+                             alt="${item.name}" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        ${item.isPromo ? '<span class="absolute top-3 right-3 bg-brandRed-600 text-white text-xs font-black px-2.5 py-1 rounded-full shadow">PROMO</span>' : ''}
+                    </div>
+                    <div class="p-5 flex-grow flex flex-col justify-between space-y-3">
+                        <div>
+                            <h3 class="font-bold text-white text-lg group-hover:text-amber-400 transition">${item.name}</h3>
+                            <p class="text-xs text-slate-400 mt-1 line-clamp-2">${item.description}</p>
+                        </div>
+                        <div class="flex justify-between items-center pt-2 border-t border-zinc-800">
+                            <span class="text-amber-400 font-extrabold text-xl">${item.price} ฿</span>
+                            <button onclick="addToCart(${item.id})" class="bg-amber-500 hover:bg-amber-400 text-zinc-950 px-3.5 py-2 rounded-xl font-bold text-xs shadow transition active:scale-95">
+                                + เพิ่มใส่ตะกร้า
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
         }
 
-        function renderMenu(items) {
-            const grid = document.getElementById("menu-grid");
-            if (!grid) return;
-            grid.innerHTML = "";
+        // Render Menu Grid
+        function renderMenuGrid(items) {
+            const container = document.getElementById('menu-grid');
+            if (!container) return;
 
             if (items.length === 0) {
-                grid.innerHTML = `
-                    <div class="col-span-full text-center py-12 text-slate-500 space-y-2">
-                        <p class="text-3xl">🔍</p>
-                        <p class="font-bold">ไม่พบเมนูอาหารที่คุณค้นหา</p>
-                        <p class="text-xs">ลองใช้คำค้นหาอื่น หรือเลือกดูทุกหมวดหมู่</p>
-                    </div>`;
+                container.innerHTML = `
+                    <div class="col-span-full text-center py-12 text-slate-500">
+                        <p class="text-3xl mb-2">🔍</p>
+                        <p class="text-lg">ไม่พบเมนูอาหารที่คุณค้นหา</p>
+                    </div>
+                `;
                 return;
             }
 
-            items.forEach(item => {
-                const card = createMenuCardElement(item);
-                grid.appendChild(card);
-            });
-        }
-
-        function createMenuCardElement(item) {
-            const card = document.createElement("div");
-            card.className = "bg-zinc-900 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between border border-zinc-800 group";
-            
-            // Image with fallback handling
-            const fallbackAction = item.fallbackImg ? `onerror="this.src='${item.fallbackImg}'"` : '';
-
-            card.innerHTML = `
-                <div>
-                    <div class="relative overflow-hidden aspect-video bg-zinc-950">
-                        <img src="${item.img}" ${fallbackAction} alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <span class="absolute top-3 left-3 bg-zinc-950/80 backdrop-blur-md text-amber-400 border border-amber-500/30 text-xs px-2.5 py-1 rounded-full font-bold shadow">
-                            ${item.tag}
-                        </span>
+            container.innerHTML = items.map(item => `
+                <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md flex flex-col justify-between group hover:border-amber-500/50 transition duration-300">
+                    <div class="relative h-44 overflow-hidden bg-zinc-950">
+                        <img src="${getImagePath(item.image)}" 
+                             onerror="this.src='https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80'" 
+                             alt="${item.name}" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        ${item.isPromo ? '<span class="absolute top-2 right-2 bg-brandRed-600 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow">PROMO</span>' : ''}
                     </div>
-                    <div class="p-4">
-                        <h3 class="text-base font-bold text-slate-100 leading-snug group-hover:text-amber-400 transition">${item.name}</h3>
+                    <div class="p-4 flex-grow flex flex-col justify-between space-y-3">
+                        <div>
+                            <h3 class="font-bold text-white text-base group-hover:text-amber-400 transition">${item.name}</h3>
+                            <p class="text-xs text-slate-400 mt-1 line-clamp-2">${item.description}</p>
+                        </div>
+                        <div class="flex justify-between items-center pt-2 border-t border-zinc-800">
+                            <span class="text-amber-400 font-extrabold text-lg">${item.price} ฿</span>
+                            <button onclick="addToCart(${item.id})" class="bg-amber-500 hover:bg-amber-400 text-zinc-950 px-3 py-1.5 rounded-xl font-bold text-xs shadow transition active:scale-95">
+                                + สั่งเลย
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="p-4 pt-0 flex justify-between items-center mt-2 border-t border-zinc-800/60">
-                    <span class="text-xl font-extrabold text-amber-400">${item.price} <span class="text-xs font-normal">฿</span></span>
-                    <button onclick="openCustomModal(${item.id})" class="bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold text-sm px-4 py-2 rounded-xl transition shadow flex items-center gap-1 active:scale-95">
-                        <span>+</span> เลือก
-                    </button>
-                </div>
-            `;
-            return card;
+            `).join('');
         }
 
-        /* --- Filter & Search Logic --- */
-        function filterMenu(category, btn) {
-            const buttons = document.querySelectorAll(".tab-btn");
-            buttons.forEach(b => {
-                b.classList.remove("bg-amber-500", "text-zinc-950", "font-bold", "shadow-md");
-                b.classList.add("bg-zinc-900", "text-slate-200");
-            });
-            btn.classList.remove("bg-zinc-900", "text-slate-200");
-            btn.classList.add("bg-amber-500", "text-zinc-950", "font-bold", "shadow-md");
+        // Filter Menu by Category
+        function filterMenu(category, btnElement) {
+            activeCategory = category;
 
-            if (category === "all") {
-                renderMenu(menuData);
-            } else {
-                const filtered = menuData.filter(item => item.category === category);
-                renderMenu(filtered);
+            // Update Tab UI
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-amber-500', 'text-zinc-950', 'font-bold');
+                btn.classList.add('bg-zinc-900', 'text-slate-200');
+            });
+            if (btnElement) {
+                btnElement.classList.remove('bg-zinc-900', 'text-slate-200');
+                btnElement.classList.add('bg-amber-500', 'text-zinc-950', 'font-bold');
             }
+
+            let filtered = menuData;
+            if (category === 'promo') {
+                filtered = menuData.filter(i => i.isPromo);
+            } else if (category !== 'all') {
+                filtered = menuData.filter(i => i.category === category);
+            }
+
+            renderMenuGrid(filtered);
         }
 
+        // Search Menu Input
         function searchMenu() {
-            const keyword = document.getElementById("search-input").value.toLowerCase().trim();
-            const filtered = menuData.filter(item => item.name.toLowerCase().includes(keyword));
-            renderMenu(filtered);
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            const filtered = menuData.filter(item => 
+                item.name.toLowerCase().includes(query) || 
+                item.description.toLowerCase().includes(query)
+            );
+            renderMenuGrid(filtered);
         }
 
-        /* --- Star Rating Logic --- */
-        function setRating(rating) {
-            document.getElementById('selected-rating').value = rating;
-            const stars = document.querySelectorAll('#star-rating-buttons .star');
-            const ratingLabels = [
-                "",
-                "1.0 / 5 (ควรปรับปรุง)",
-                "2.0 / 5 (พอใช้)",
-                "3.0 / 5 (ปานกลาง)",
-                "4.0 / 5 (อร่อยมาก)",
-                "5.0 / 5 (ประทับใจมาก)"
-            ];
+        // Cart Actions
+        function addToCart(itemId) {
+            const item = menuData.find(i => i.id === itemId);
+            if (!item) return;
 
-            stars.forEach((star, idx) => {
-                if (idx < rating) {
-                    star.classList.add('text-amber-400');
-                    star.classList.remove('text-zinc-700');
-                } else {
-                    star.classList.remove('text-amber-400');
-                    star.classList.add('text-zinc-700');
-                }
-            });
-
-            document.getElementById('rating-text').innerText = ratingLabels[rating];
-        }
-
-        function handleReviewSubmit(e) {
-            e.preventDefault();
-            const author = document.getElementById('review-author').value;
-            const rating = document.getElementById('selected-rating').value;
-            showToast(`ขอบคุณคุณ ${author}! ส่งรีวิว (${rating} ดาว) เรียบร้อยแล้ว ⭐`);
-            document.getElementById('review-form').reset();
-            setRating(5);
-        }
-
-        /* --- Modal & Meal Customization Logic --- */
-        function openCustomModal(id) {
-            selectedMenu = menuData.find(item => item.id === id);
-            if (!selectedMenu) return;
-
-            document.getElementById("modal-title").innerText = selectedMenu.name;
-            document.getElementById("modal-price").innerText = `${selectedMenu.price} ฿`;
-
-            const noodleGroup = document.getElementById("noodle-options-group");
-            if (selectedMenu.isNoodle) {
-                noodleGroup.classList.remove("hidden");
+            const existing = cart.find(c => c.id === itemId);
+            if (existing) {
+                existing.quantity += 1;
             } else {
-                noodleGroup.classList.add("hidden");
+                cart.push({ ...item, quantity: 1 });
             }
 
-            document.querySelectorAll('.topping-cb').forEach(cb => cb.checked = false);
-
-            document.getElementById("custom-modal").classList.remove("hidden");
+            updateCartUI();
         }
 
-        function closeCustomModal() {
-            document.getElementById("custom-modal").classList.add("hidden");
+        function removeFromCart(itemId) {
+            cart = cart.filter(c => c.id !== itemId);
+            updateCartUI();
         }
 
-        function confirmAddToCart() {
-            let noodleType = "";
-            let extraPrice = 0;
-
-            if (selectedMenu.isNoodle) {
-                noodleType = document.getElementById("select-noodle").value;
-                if (noodleType === "มาม่า") extraPrice += 5;
-            }
-
-            const spicyRadios = document.getElementsByName("spicy");
-            let spicyLevel = "เผ็ดปกติ";
-            for (const r of spicyRadios) {
-                if (r.checked) {
-                    spicyLevel = r.value;
-                    break;
+        function updateQuantity(itemId, delta) {
+            const item = cart.find(c => c.id === itemId);
+            if (item) {
+                item.quantity += delta;
+                if (item.quantity <= 0) {
+                    removeFromCart(itemId);
+                } else {
+                    updateCartUI();
                 }
             }
-
-            let selectedToppings = [];
-            const toppingCBs = document.querySelectorAll('.topping-cb:checked');
-            toppingCBs.forEach(cb => {
-                selectedToppings.push(cb.value);
-                extraPrice += parseInt(cb.getAttribute('data-price'));
-            });
-
-            const cartItem = {
-                cartId: Date.now(),
-                name: selectedMenu.name,
-                totalPrice: selectedMenu.price + extraPrice,
-                noodle: noodleType,
-                spicy: spicyLevel,
-                toppings: selectedToppings
-            };
-
-            cart.push(cartItem);
-            updateCartUI();
-            closeCustomModal();
-            showToast(`เพิ่ม "${selectedMenu.name}" ลงในตะกร้าเรียบร้อย!`);
         }
 
-        /* --- Cart Drawer Functions --- */
         function updateCartUI() {
-            const cartCountBadge = document.getElementById("cart-count");
-            cartCountBadge.innerText = cart.length;
+            const countElem = document.getElementById('cart-count');
+            const totalCount = cart.reduce((sum, i) => sum + i.quantity, 0);
+            countElem.innerText = totalCount;
 
-            const cartItemsContainer = document.getElementById("cart-items");
-            cartItemsContainer.innerHTML = "";
-
-            let total = 0;
+            const itemsElem = document.getElementById('cart-items');
+            const totalElem = document.getElementById('cart-total');
 
             if (cart.length === 0) {
-                cartItemsContainer.innerHTML = `
-                    <div class="text-center text-slate-500 py-10 space-y-2">
-                        <span class="text-4xl">🛒</span>
-                        <p class="font-semibold text-slate-400">ไม่มีสินค้าในตะกร้า</p>
-                        <p class="text-xs">เลือกรายการอาหารน่าทานแล้วกดเพิ่มลงตะกร้าได้เลยครับ</p>
-                    </div>`;
-            } else {
-                cart.forEach((item) => {
-                    total += item.totalPrice;
-                    const div = document.createElement("div");
-                    div.className = "flex justify-between items-start bg-zinc-950 p-3.5 rounded-2xl border border-zinc-800 text-sm";
-                    div.innerHTML = `
-                        <div class="space-y-0.5">
-                            <p class="font-bold text-slate-100 leading-snug">${item.name}</p>
-                            <p class="text-xs text-slate-400">
-                                ${item.noodle ? '🍜 เส้น: ' + item.noodle + ' | ' : ''}
-                                🌶️ เผ็ด: ${item.spicy}
-                                ${item.toppings.length > 0 ? '<br>➕ เพิ่ม: ' + item.toppings.join(', ') : ''}
-                            </p>
-                            <p class="font-extrabold text-amber-400 text-base mt-1">${item.totalPrice} ฿</p>
-                        </div>
-                        <button onclick="removeFromCart(${item.cartId})" class="text-slate-500 hover:text-red-400 font-bold text-lg p-1 transition">
-                            ✕
-                        </button>
-                    `;
-                    cartItemsContainer.appendChild(div);
-                });
+                itemsElem.innerHTML = `<p class="text-center text-slate-500 py-8 text-sm">ไม่มีสินค้าในตะกร้า</p>`;
+                totalElem.innerText = `0 ฿`;
+                return;
             }
 
-            document.getElementById("cart-total").innerText = `${total} ฿`;
-        }
+            let grandTotal = 0;
+            itemsElem.innerHTML = cart.map(i => {
+                const itemTotal = i.price * i.quantity;
+                grandTotal += itemTotal;
+                return `
+                    <div class="flex items-center justify-between bg-zinc-950 p-3 rounded-xl border border-zinc-800">
+                        <div>
+                            <p class="font-bold text-white text-sm">${i.name}</p>
+                            <p class="text-xs text-amber-400 font-semibold">${i.price} ฿ &times; ${i.quantity} = ${itemTotal} ฿</p>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button onclick="updateQuantity(${i.id}, -1)" class="w-7 h-7 bg-zinc-800 text-white rounded-lg font-bold flex items-center justify-center hover:bg-zinc-700">-</button>
+                            <span class="text-sm font-bold w-4 text-center">${i.quantity}</span>
+                            <button onclick="updateQuantity(${i.id}, 1)" class="w-7 h-7 bg-zinc-800 text-white rounded-lg font-bold flex items-center justify-center hover:bg-zinc-700">+</button>
+                            <button onclick="removeFromCart(${i.id})" class="text-brandRed-500 text-xs ml-2 hover:underline">ลบ</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
 
-        function removeFromCart(cartId) {
-            cart = cart.filter(item => item.cartId !== cartId);
-            updateCartUI();
-            showToast("ลบรายการออกจากตะกร้าเรียบร้อย");
+            totalElem.innerText = `${grandTotal} ฿`;
         }
 
         function toggleCartModal() {
-            document.getElementById("cart-modal").classList.toggle("hidden");
+            const modal = document.getElementById('cart-modal');
+            modal.classList.toggle('hidden');
         }
 
-        function orderViaLineMan() {
+        function checkout() {
             if (cart.length === 0) {
-                showToast("กรุณาเลือกเมนูอาหารลงตะกร้าก่อนสั่งซื้อครับ");
+                alert("กรุณาเลือกรายการอาหารอย่างน้อย 1 รายการครับ");
                 return;
             }
-            window.open("https://lineman.line.me/", '_blank');
+            alert("ขอบคุณสำหรับการสั่งซื้อ! ระบบได้รับคำสั่งซื้อเรียบร้อยแล้วครับ");
+            cart = [];
+            updateCartUI();
+            toggleCartModal();
         }
 
-        function showToast(message) {
-            const toast = document.getElementById("toast-msg");
-            document.getElementById("toast-text").innerText = message;
-            toast.classList.remove("hidden");
-            setTimeout(() => {
-                toast.classList.add("hidden");
-            }, 3000);
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            alert("ขอบคุณสำหรับข้อความติชม/รีวิวครับ! ทางร้านจะนำไปพัฒนาบริการให้ดียิ่งขึ้นครับ");
+            event.target.reset();
         }
-
-        /* --- Application Initializer --- */
-        window.onload = function() {
-            renderFeaturedHomeMenu();
-            renderMenu(menuData);
-            navigateTo('home');
-        };
     </script>
 </body>
 </html>
