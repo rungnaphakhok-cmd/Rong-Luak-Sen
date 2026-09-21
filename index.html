@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ร้านโรงลวกเส้น - อร่อย เข้มข้น เส้นเหนียวนุ่ม</title>
-    <!-- Tailwind CSS CDN -->
+
+    <!-- 
+      =======================================================================
+      NOTE ON FOLDER STRUCTURE & .gitkeep:
+      =======================================================================
+      โฟลเดอร์ assets/images/ ถูกสร้างและรักษาสถานะโฟลเดอร์ในระบบ Git ไว้ด้วยไฟล์ .gitkeep
+      
+      โครงสร้างไฟล์ที่แนะนำ:
+      project/
+      ├── index.html
+      └── assets/
+          └── images/
+              ├── .gitkeep          (ไฟล์คงสภาพโฟลเดอร์)
+              ├── hero-banner.jpg   (รูปแบนเนอร์หน้าแรก)
+              ├── menu-boat-noodle.jpg (รูปเมนูก๋วยเตี๋ยวเรือ)
+              ├── menu-kaprao.jpg   (รูปเมนูกะเพรา)
+              ├── menu-khao-soi.jpg (รูปเมนูกาซอย)
+              ├── menu-pork-leg.jpg (รูปเมนูข้าวขาหมู)
+              ├── menu-dessert.jpg  (รูปเมนูขนมหวาน/เครื่องดื่ม)
+              ├── about-restaurant.jpg (รูปบรรยากาศร้าน)
+              ├── gallery-1.jpg
+              ├── gallery-2.jpg
+              ├── gallery-3.jpg
+              └── gallery-4.jpg
+
+      ข้อแนะนำ: คุณสามารถเซฟรูปภาพลงในโฟลเดอร์ assets/images/ แล้วเปลี่ยนชื่อไฟล์
+      ในโค้ดตามชื่อรูปของคุณได้ทันที!
+      =======================================================================
+    -->
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Prompt -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -41,6 +70,7 @@
             }
         }
     </script>
+    
     <style>
         body {
             font-family: 'Prompt', sans-serif;
@@ -54,7 +84,6 @@
             display: block;
             opacity: 1;
         }
-        /* Custom scrollbar for dark theme */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -72,7 +101,6 @@
 </head>
 <body class="bg-zinc-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-zinc-950">
 
-    <!-- Navigation Bar -->
     <header class="bg-zinc-900/95 text-white sticky top-0 z-40 shadow-xl border-b border-amber-500/20 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
             <!-- Brand Logo -->
@@ -115,7 +143,6 @@
         </div>
     </header>
 
-    <!-- Main Dynamic Content Container -->
     <main class="flex-grow">
         
         <!-- SECTION 1: HOME PAGE -->
@@ -145,10 +172,14 @@
                         </div>
                     </div>
 
-                    <!-- Hero Visual Showcase -->
+                    <!-- Hero Image Banner Placeholder -->
                     <div class="relative flex justify-center">
-                        <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-500/30">
-                            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80" alt="ก๋วยเตี๋ยวเรือโรงลวกเส้น" class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
+                        <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-500/30 bg-zinc-900">
+                            <!-- Image Source points to assets/images/hero-banner.jpg -->
+                            <img src="assets/images/hero-banner.jpg" 
+                                 onerror="this.src='https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80'" 
+                                 alt="ก๋วยเตี๋ยวเรือโรงลวกเส้น" 
+                                 class="w-full h-full object-cover transform hover:scale-105 transition duration-500">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-6">
                                 <div class="text-white">
                                     <p class="text-amber-400 font-bold text-sm">เมนูขายดีอันดับ 1</p>
@@ -255,7 +286,6 @@
             </div>
         </section>
 
-        <!-- SECTION 2: MENU PAGE -->
         <section id="page-menu" class="page-section">
             <div class="bg-zinc-900 border-b border-zinc-800 text-white py-10 px-4 text-center">
                 <h1 class="text-3xl sm:text-4xl font-extrabold text-amber-400">รายการเมนูอาหารทั้งหมด</h1>
@@ -296,7 +326,6 @@
             </div>
         </section>
 
-        <!-- SECTION 3: ABOUT PAGE -->
         <section id="page-about" class="page-section">
             <div class="bg-gradient-to-b from-zinc-900 to-zinc-950 border-b border-zinc-800 text-white py-12 px-4 text-center">
                 <h1 class="text-3xl sm:text-4xl font-extrabold text-amber-400">เกี่ยวกับร้านโรงลวกเส้น</h1>
@@ -316,8 +345,12 @@
                             นอกจากก๋วยเตี๋ยวเรือแล้ว เรายังต่อยอดความอร่อยด้วยเมนู "ข้าวซอยสูตรเหนือ" และ "ผัดกะเพราพริกแห้งรสจัดจ้าน" ที่ถูกปากคนไทย สะอาด ถูกสุขอนามัยในราคาน่ารักย่อมเยา
                         </p>
                     </div>
-                    <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=800&q=80" alt="บรรยากาศร้านโรงลวกเส้น" class="w-full h-80 object-cover">
+                    <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-zinc-800 bg-zinc-900">
+                        <!-- Image Source points to assets/images/about-restaurant.jpg -->
+                        <img src="assets/images/about-restaurant.jpg" 
+                             onerror="this.src='https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=800&q=80'" 
+                             alt="บรรยากาศร้านโรงลวกเส้น" 
+                             class="w-full h-80 object-cover">
                     </div>
                 </div>
 
@@ -343,20 +376,19 @@
                     </div>
                 </div>
 
-                <!-- Gallery Grid -->
+                <!-- Gallery Grid using assets/images/ -->
                 <div>
                     <h3 class="text-2xl font-bold text-white mb-6 text-center">บรรยากาศร้านและจานเด็ด</h3>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80" class="rounded-2xl h-44 w-full object-cover shadow-sm hover:opacity-90 transition border border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80" class="rounded-2xl h-44 w-full object-cover shadow-sm hover:opacity-90 transition border border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80" class="rounded-2xl h-44 w-full object-cover shadow-sm hover:opacity-90 transition border border-zinc-800">
-                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" class="rounded-2xl h-44 w-full object-cover shadow-sm hover:opacity-90 transition border border-zinc-800">
+                        <img src="assets/images/gallery-1.jpg" onerror="this.src='https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80'" class="rounded-2xl h-44 w-full object-cover shadow-sm hover:opacity-90 transition border border-zinc-800">
+                        <img src="assets/images/gallery-2.jpg" onerror="this.src='https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80'" class="rounded-2xl h-44 w-full object-cover shadow-sm hover:opacity-90 transition border border-zinc-800">
+                        <img src="assets/images/gallery-3.jpg" onerror="this.src='https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80'" class="rounded-2xl h-44 w-full object-cover shadow-sm hover:opacity-90 transition border border-zinc-800">
+                        <img src="assets/images/gallery-4.jpg" onerror="this.src='https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80'" class="rounded-2xl h-44 w-full object-cover shadow-sm hover:opacity-90 transition border border-zinc-800">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 4: CONTACT & REVIEW PAGE -->
         <section id="page-contact" class="page-section">
             <div class="bg-zinc-900 border-b border-zinc-800 text-white py-10 px-4 text-center">
                 <h1 class="text-3xl sm:text-4xl font-extrabold text-amber-400">ติดต่อเรา & ส่งรีวิวความประทับใจ</h1>
@@ -411,7 +443,7 @@
                             </div>
                         </div>
 
-                        <!-- Simulated Map Component -->
+                        <!-- Map Component -->
                         <div class="bg-zinc-900 p-4 rounded-3xl shadow-sm border border-zinc-800 space-y-3">
                             <div class="flex justify-between items-center px-2">
                                 <h3 class="font-bold text-white">แผนที่ร้าน (Google Maps)</h3>
@@ -427,7 +459,7 @@
                         </div>
                     </div>
 
-                    <!-- Send Review Form (Replaced Reservation Form) -->
+                    <!-- Send Review Form -->
                     <div class="bg-zinc-900 p-6 sm:p-8 rounded-3xl shadow-sm border border-zinc-800 space-y-6">
                         <div>
                             <h2 class="text-2xl font-bold text-amber-400">ส่งรีวิว & คะแนนความพึงพอใจ</h2>
@@ -477,7 +509,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-zinc-900 text-slate-300 border-t border-zinc-800 pt-10 pb-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 pb-8 border-b border-zinc-800 text-sm">
             <div class="space-y-3">
@@ -512,9 +543,8 @@
         </div>
     </footer>
 
-    <!-- MODAL: Customize Meal Options -->
     <div id="custom-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
-        <div class="bg-zinc-900 border border-zinc-800 text-slate-100 rounded-3xl max-w-md w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto animate-in fade-in zoom-in duration-200">
+        <div class="bg-zinc-900 border border-zinc-800 text-slate-100 rounded-3xl max-w-md w-full p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
             <button onclick="closeCustomModal()" class="absolute top-4 right-4 bg-zinc-800 text-slate-400 hover:text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">&times;</button>
             
             <h3 id="modal-title" class="text-xl font-bold text-amber-400 mb-1 pr-6">ชื่อเมนู</h3>
@@ -590,9 +620,8 @@
         </div>
     </div>
 
-    <!-- MODAL: Cart Drawer -->
     <div id="cart-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
-        <div class="bg-zinc-900 border border-zinc-800 text-slate-100 rounded-3xl max-w-lg w-full p-6 shadow-2xl relative max-h-[90vh] flex flex-col animate-in fade-in zoom-in duration-200">
+        <div class="bg-zinc-900 border border-zinc-800 text-slate-100 rounded-3xl max-w-lg w-full p-6 shadow-2xl relative max-h-[90vh] flex flex-col">
             <button onclick="toggleCartModal()" class="absolute top-4 right-4 bg-zinc-800 text-slate-400 hover:text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">&times;</button>
             
             <h3 class="text-2xl font-bold text-amber-400 mb-4 border-b border-zinc-800 pb-3 flex items-center gap-2">
@@ -623,44 +652,48 @@
         <span id="toast-text">ทำรายการสำเร็จ</span>
     </div>
 
-    <!-- Application JavaScript -->
     <script>
-        /* ... existing menuData dataset ... */
+        /*
+         * =========================================================================
+         * MENU DATA ARRAY - Referencing images inside assets/images/
+         * =========================================================================
+         * หมายเหตุ: img จะเรียกไฟล์จาก assets/images/ หากไม่มีไฟล์จะดึงระบบสำรอง Unsplash อัตโนมัติ
+         */
         const menuData = [
-            { id: 1, name: "เซตคู่หูสุดคุ้ม: ก๋วยเตี๋ยวเรือ 2 ชาม + เกี๊ยวทอด", price: 129, category: "promo", isNoodle: true, img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "🔥 โปรสุดคุ้ม", featured: true },
-            { id: 2, name: "เซตกะเพราถาด + ไข่ดาว 2 ฟอง + ชาเย็น 2 แก้ว", price: 159, category: "promo", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "🔥 ขายดีประจำสัปดาห์", featured: true },
-            { id: 3, name: "เซตข้าวซอยไก่ + แคบหมู + น้ำอัดลม", price: 119, category: "promo", isNoodle: false, img: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "🔥 โปรโมชันพิเศษ", featured: true },
-            { id: 4, name: "ก๋วยเตี๋ยวเรือน้ำตกหมูสด/หมูตุ๋น", price: 55, category: "soup", isNoodle: true, img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เมนูแนะนำ", featured: true },
-            { id: 5, name: "ก๋วยเตี๋ยวเรือน้ำตกเนื้อโพนยางคำ", price: 65, category: "soup", isNoodle: true, img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เข้มข้น" },
-            { id: 6, name: "ก๋วยเตี๋ยวต้มยำมะนาวสดหมูสับ", price: 60, category: "soup", isNoodle: true, img: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "แซ่บสดชื่น" },
-            { id: 7, name: "ก๋วยเตี๋ยวน้ำใสหมูเด้งเกี๊ยวกรอบ", price: 50, category: "soup", isNoodle: true, img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เด็กทานได้" },
-            { id: 8, name: "บะหมี่แห้งยำโบราณทรงเครื่อง", price: 60, category: "dry", isNoodle: true, img: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "ยอดนิยม" },
-            { id: 9, name: "ก๋วยเตี๋ยวเรือแห้งซีอิ๊วดำหมูตุ๋น", price: 55, category: "dry", isNoodle: true, img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "กลมกล่อม" },
-            { id: 10, name: "ก๋วยเตี๋ยวแห้งต้มยำไข่มะตอย", price: 65, category: "dry", isNoodle: true, img: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "เด็ดมาก" },
-            { id: 11, name: "เส้นใหญ่แห้งเนื้อเปื่อยชิ้นสด", price: 70, category: "dry", isNoodle: true, img: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เนื้อนุ่ม" },
-            { id: 12, name: "วุ้นเส้นแห้งต้มยำทะเล", price: 75, category: "dry", isNoodle: true, img: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "กุ้งหมึกแน่น" },
-            { id: 13, name: "ข้าวซอยไก่น่องโตสูตรเหนือ", price: 70, category: "khao-soi", isNoodle: false, img: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "สูตรเชียงใหม่" },
-            { id: 14, name: "ข้าวซอยเนื้อน่องลายตุ๋น", price: 85, category: "khao-soi", isNoodle: false, img: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "เนื้อลายเข้มข้น" },
-            { id: 15, name: "ข้าวซอยหมูกรอบทรงเครื่อง", price: 80, category: "khao-soi", isNoodle: false, img: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "หมูกรอบเด็ด" },
-            { id: 16, name: "ข้าวขาหมูเนื้อหนัง+ไข่ต้ม", price: 65, category: "pork-leg", isNoodle: false, img: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "ตุ๋นเข้าเนื้อ" },
-            { id: 17, name: "ข้าวคาคากิ (คากิล้วนละลายในปาก)", price: 75, category: "pork-leg", isNoodle: false, img: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "เอ็นนุ่ม" },
-            { id: 18, name: "ข้าวขาหมูกรอบราดซอสฉ่ำ", price: 75, category: "pork-leg", isNoodle: false, img: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "เมนูประยุกต์" },
-            { id: 19, name: "ผัดกะเพราหมูสับแท้ (ไม่ใส่ผักอื่น)", price: 55, category: "kaprao", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "ดั้งเดิม" },
-            { id: 20, name: "ผัดกะเพราหมูกรอบพริกแห้ง", price: 65, category: "kaprao", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "ยอดฮิต" },
-            { id: 21, name: "ผัดกะเพราเนื้อสับพริกสดจัดจ้าน", price: 70, category: "kaprao", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "รสจัด" },
-            { id: 22, name: "ผัดกะเพราไก่ชิ้นเนื้อนุ่ม", price: 55, category: "kaprao", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "อร่อยเบาๆ" },
-            { id: 23, name: "ผัดกะเพราทะเลรวมมิตร (กุ้ง+หมึก)", price: 80, category: "kaprao", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "สดจากทะเล" },
-            { id: 24, name: "ผัดกะเพราขาหมูตุ๋นราดข้าว", price: 70, category: "kaprao", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "หอมนุ่ม" },
-            { id: 25, name: "ผัดกะเพราไข่เยี่ยวม้าหมูสับ", price: 65, category: "kaprao", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "กลมกล่อม" },
-            { id: 26, name: "ผัดกะเพราเต้าหู้หมูสับ", price: 55, category: "kaprao", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "สุขภาพ" },
-            { id: 27, name: "กับข้าว: ต้มแซ่บกระดูกหมูอ่อน", price: 120, category: "kubkhao", isNoodle: false, img: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "แซ่บนัว" },
-            { id: 28, name: "กับข้าว: ขาหมูเนื้อหนังจานใหญ่", price: 150, category: "kubkhao", isNoodle: false, img: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "ทานได้ 2-3 คน" },
-            { id: 29, name: "กับข้าว: ผัดกะเพราหมูกรอบจานเปล", price: 140, category: "kubkhao", isNoodle: false, img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "จุใจ" },
-            { id: 30, name: "เฉาก๊วยชากังราวโบราณนมสด", price: 30, category: "dessert-drink", isNoodle: false, img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "หวานเย็น" },
-            { id: 31, name: "ขนมถ้วยโบราณ (คู่ละ)", price: 20, category: "dessert-drink", isNoodle: false, img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "กะทิหอม" },
-            { id: 32, name: "ชาไทยเย็นสูตรเข้มข้น", price: 25, category: "dessert-drink", isNoodle: false, img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "ชงสด" },
-            { id: 33, name: "น้ำโอเลี้ยงโบราณ / ชาดำเย็น", price: 20, category: "dessert-drink", isNoodle: false, img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "สดชื่น" },
-            { id: 34, name: "น้ำอัดลม + น้ำแข็งแก้ว", price: 20, category: "dessert-drink", isNoodle: false, img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "ดับกระหาย" }
+            { id: 1, name: "เซตคู่หูสุดคุ้ม: ก๋วยเตี๋ยวเรือ 2 ชาม + เกี๊ยวทอด", price: 129, category: "promo", isNoodle: true, img: "assets/images/promo-set-1.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "🔥 โปรสุดคุ้ม", featured: true },
+            { id: 2, name: "เซตกะเพราถาด + ไข่ดาว 2 ฟอง + ชาเย็น 2 แก้ว", price: 159, category: "promo", isNoodle: false, img: "assets/images/promo-set-2.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "🔥 ขายดีประจำสัปดาห์", featured: true },
+            { id: 3, name: "เซตข้าวซอยไก่ + แคบหมู + น้ำอัดลม", price: 119, category: "promo", isNoodle: false, img: "assets/images/promo-set-3.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "🔥 โปรโมชันพิเศษ", featured: true },
+            { id: 4, name: "ก๋วยเตี๋ยวเรือน้ำตกหมูสด/หมูตุ๋น", price: 55, category: "soup", isNoodle: true, img: "assets/images/menu-boat-noodle.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เมนูแนะนำ", featured: true },
+            { id: 5, name: "ก๋วยเตี๋ยวเรือน้ำตกเนื้อโพนยางคำ", price: 65, category: "soup", isNoodle: true, img: "assets/images/noodle-beef.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เข้มข้น" },
+            { id: 6, name: "ก๋วยเตี๋ยวต้มยำมะนาวสดหมูสับ", price: 60, category: "soup", isNoodle: true, img: "assets/images/noodle-tomyum.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "แซ่บสดชื่น" },
+            { id: 7, name: "ก๋วยเตี๋ยวน้ำใสหมูเด้งเกี๊ยวกรอบ", price: 50, category: "soup", isNoodle: true, img: "assets/images/noodle-clear.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เด็กทานได้" },
+            { id: 8, name: "บะหมี่แห้งยำโบราณทรงเครื่อง", price: 60, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-1.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "ยอดนิยม" },
+            { id: 9, name: "ก๋วยเตี๋ยวเรือแห้งซีอิ๊วดำหมูตุ๋น", price: 55, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-2.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "กลมกล่อม" },
+            { id: 10, name: "ก๋วยเตี๋ยวแห้งต้มยำไข่มะตอย", price: 65, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-3.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "เด็ดมาก" },
+            { id: 11, name: "เส้นใหญ่แห้งเนื้อเปื่อยชิ้นสด", price: 70, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-4.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "เนื้อนุ่ม" },
+            { id: 12, name: "วุ้นเส้นแห้งต้มยำทะเล", price: 75, category: "dry", isNoodle: true, img: "assets/images/dry-noodle-5.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "กุ้งหมึกแน่น" },
+            { id: 13, name: "ข้าวซอยไก่น่องโตสูตรเหนือ", price: 70, category: "khao-soi", isNoodle: false, img: "assets/images/menu-khao-soi.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "สูตรเชียงใหม่" },
+            { id: 14, name: "ข้าวซอยเนื้อน่องลายตุ๋น", price: 85, category: "khao-soi", isNoodle: false, img: "assets/images/khao-soi-beef.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "เนื้อลายเข้มข้น" },
+            { id: 15, name: "ข้าวซอยหมูกรอบทรงเครื่อง", price: 80, category: "khao-soi", isNoodle: false, img: "assets/images/khao-soi-pork.jpg", fallbackImg: "https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=500&q=80", tag: "หมูกรอบเด็ด" },
+            { id: 16, name: "ข้าวขาหมูเนื้อหนัง+ไข่ต้ม", price: 65, category: "pork-leg", isNoodle: false, img: "assets/images/menu-pork-leg.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "ตุ๋นเข้าเนื้อ" },
+            { id: 17, name: "ข้าวคาคากิ (คากิล้วนละลายในปาก)", price: 75, category: "pork-leg", isNoodle: false, img: "assets/images/pork-leg-kaki.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "เอ็นนุ่ม" },
+            { id: 18, name: "ข้าวขาหมูกรอบราดซอสฉ่ำ", price: 75, category: "pork-leg", isNoodle: false, img: "assets/images/pork-leg-crispy.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "เมนูประยุกต์" },
+            { id: 19, name: "ผัดกะเพราหมูสับแท้ (ไม่ใส่ผักอื่น)", price: 55, category: "kaprao", isNoodle: false, img: "assets/images/menu-kaprao.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "ดั้งเดิม" },
+            { id: 20, name: "ผัดกะเพราหมูกรอบพริกแห้ง", price: 65, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-crispy-pork.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "ยอดฮิต" },
+            { id: 21, name: "ผัดกะเพราเนื้อสับพริกสดจัดจ้าน", price: 70, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-beef.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "รสจัด" },
+            { id: 22, name: "ผัดกะเพราไก่ชิ้นเนื้อนุ่ม", price: 55, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-chicken.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "อร่อยเบาๆ" },
+            { id: 23, name: "ผัดกะเพราทะเลรวมมิตร (กุ้ง+หมึก)", price: 80, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-seafood.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "สดจากทะเล" },
+            { id: 24, name: "ผัดกะเพราขาหมูตุ๋นราดข้าว", price: 70, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-stewed-pork.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "หอมนุ่ม" },
+            { id: 25, name: "ผัดกะเพราไข่เยี่ยวม้าหมูสับ", price: 65, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-century-egg.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "กลมกล่อม" },
+            { id: 26, name: "ผัดกะเพราเต้าหู้หมูสับ", price: 55, category: "kaprao", isNoodle: false, img: "assets/images/kaprao-tofu.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "สุขภาพ" },
+            { id: 27, name: "กับข้าว: ต้มแซ่บกระดูกหมูอ่อน", price: 120, category: "kubkhao", isNoodle: false, img: "assets/images/kubkhao-tomsap.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "แซ่บนัว" },
+            { id: 28, name: "กับข้าว: ขาหมูเนื้อหนังจานใหญ่", price: 150, category: "kubkhao", isNoodle: false, img: "assets/images/kubkhao-porkleg.jpg", fallbackImg: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=500&q=80", tag: "ทานได้ 2-3 คน" },
+            { id: 29, name: "กับข้าว: ผัดกะเพราหมูกรอบจานเปล", price: 140, category: "kubkhao", isNoodle: false, img: "assets/images/kubkhao-kaprao.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "จุใจ" },
+            { id: 30, name: "เฉาก๊วยชากังราวโบราณนมสด", price: 30, category: "dessert-drink", isNoodle: false, img: "assets/images/dessert-grass-jelly.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "หวานเย็น" },
+            { id: 31, name: "ขนมถ้วยโบราณ (คู่ละ)", price: 20, category: "dessert-drink", isNoodle: false, img: "assets/images/dessert-kanom-tuay.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "กะทิหอม" },
+            { id: 32, name: "ชาไทยเย็นสูตรเข้มข้น", price: 25, category: "dessert-drink", isNoodle: false, img: "assets/images/drink-thai-tea.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "ชงสด" },
+            { id: 33, name: "น้ำโอเลี้ยงโบราณ / ชาดำเย็น", price: 20, category: "dessert-drink", isNoodle: false, img: "assets/images/drink-black-coffee.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "สดชื่น" },
+            { id: 34, name: "น้ำอัดลม + น้ำแข็งแก้ว", price: 20, category: "dessert-drink", isNoodle: false, img: "assets/images/drink-soda.jpg", fallbackImg: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80", tag: "ดับกระหาย" }
         ];
 
         /* --- Application State --- */
@@ -741,10 +774,14 @@
         function createMenuCardElement(item) {
             const card = document.createElement("div");
             card.className = "bg-zinc-900 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between border border-zinc-800 group";
+            
+            // Image with fallback handling
+            const fallbackAction = item.fallbackImg ? `onerror="this.src='${item.fallbackImg}'"` : '';
+
             card.innerHTML = `
                 <div>
-                    <div class="relative overflow-hidden aspect-video">
-                        <img src="${item.img}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="relative overflow-hidden aspect-video bg-zinc-950">
+                        <img src="${item.img}" ${fallbackAction} alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <span class="absolute top-3 left-3 bg-zinc-950/80 backdrop-blur-md text-amber-400 border border-amber-500/30 text-xs px-2.5 py-1 rounded-full font-bold shadow">
                             ${item.tag}
                         </span>
