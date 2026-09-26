@@ -5,35 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ร้านโรงลวกเส้น - อร่อย เข้มข้น เส้นเหนียวนุ่ม</title>
 
-    <!-- 
-      =======================================================================
-      NOTE ON FOLDER STRUCTURE & .gitkeep:
-      =======================================================================
-      โฟลเดอร์ assets/images/ ถูกสร้างและรักษาสถานะโฟลเดอร์ในระบบ Git ไว้ด้วยไฟล์ .gitkeep
-      
-      โครงสร้างไฟล์ที่แนะนำ:
-      project/
-      ├── index.html
-      └── assets/
-          └── images/
-              ├── .gitkeep          (ไฟล์คงสภาพโฟลเดอร์)
-              ├── hero-banner.jpg   (รูปแบนเนอร์หน้าแรก)
-              ├── menu-boat-noodle.jpg (รูปเมนูก๋วยเตี๋ยวเรือ)
-              ├── menu-kaprao.jpg   (รูปเมนูกะเพรา)
-              ├── menu-khao-soi.jpg (รูปเมนูกาซอย)
-              ├── menu-pork-leg.jpg (รูปเมนูข้าวขาหมู)
-              ├── menu-dessert.jpg  (รูปเมนูขนมหวาน/เครื่องดื่ม)
-              ├── about-restaurant.jpg (รูปบรรยากาศร้าน)
-              ├── gallery-1.jpg
-              ├── gallery-2.jpg
-              ├── gallery-3.jpg
-              └── gallery-4.jpg
-
-      ข้อแนะนำ: คุณสามารถเซฟรูปภาพลงในโฟลเดอร์ assets/images/ แล้วเปลี่ยนชื่อไฟล์
-      ในโค้ดตามชื่อรูปของคุณได้ทันที!
-      =======================================================================
-    -->
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -175,7 +146,6 @@
                     <!-- Hero Image Banner Placeholder -->
                     <div class="relative flex justify-center">
                         <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-500/30 bg-zinc-900">
-                            <!-- Image Source points to assets/images/hero-banner.jpg -->
                             <img src="assets/images/hero-banner.jpg" 
                                  onerror="this.src='https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80'" 
                                  alt="ก๋วยเตี๋ยวเรือโรงลวกเส้น" 
@@ -346,7 +316,6 @@
                         </p>
                     </div>
                     <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-zinc-800 bg-zinc-900">
-                        <!-- Image Source points to assets/images/about-restaurant.jpg -->
                         <img src="assets/images/about-restaurant.jpg" 
                              onerror="this.src='https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=800&q=80'" 
                              alt="บรรยากาศร้านโรงลวกเส้น" 
@@ -408,7 +377,7 @@
                                     <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center shrink-0 font-bold">📍</div>
                                     <div>
                                         <p class="font-bold text-white">ที่ตั้งร้าน</p>
-                                        <p class="text-sm text-slate-300">ตลาดต้นไม้ออเงิน2 แขวงออเงิน เขตสายไหม กรุงเทพมหานคร</p>
+                                        <p class="text-sm text-slate-300">โรงลวกเส้น ตลาดออเงิน แขวงออเงิน เขตสายไหม กรุงเทพมหานคร</p>
                                     </div>
                                 </div>
 
@@ -433,10 +402,12 @@
                             <div class="pt-4 border-t border-zinc-800 space-y-3">
                                 <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">สั่งผ่านช่องทางออนไลน์</p>
                                 <div class="grid grid-cols-2 gap-3">
-                                    <a href="https://lineman.line.me/" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
+                                    <!-- ลิงก์ตรงค้นหาร้านโรงลวกเส้น ตลาดออเงิน ใน LINE MAN -->
+                                    <a href="https://lineman.line.me/search?q=%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%A5%E0%B8%A7%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B9%8B%E0%B8%99%20%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AD%E0%B8%AD%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
                                         🛵 LINE MAN
                                     </a>
-                                    <a href="https://www.grab.com/th/" target="_blank" class="bg-green-700 hover:bg-green-600 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
+                                    <!-- ลิงก์ตรงไปยัง GrabFood -->
+                                    <a href="https://food.grab.com/th/th/restaurants?search=%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%A5%E0%B8%A7%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B9%8B%E0%B8%99" target="_blank" class="bg-green-700 hover:bg-green-600 text-white font-bold py-2.5 px-4 rounded-xl text-center text-sm shadow transition flex items-center justify-center gap-2">
                                         🚗 GrabFood
                                     </a>
                                 </div>
@@ -447,14 +418,18 @@
                         <div class="bg-zinc-900 p-4 rounded-3xl shadow-sm border border-zinc-800 space-y-3">
                             <div class="flex justify-between items-center px-2">
                                 <h3 class="font-bold text-white">แผนที่ร้าน (Google Maps)</h3>
-                                <a href="https://maps.google.com" target="_blank" class="text-xs text-amber-400 font-bold hover:underline">เปิดใน Google Maps &rarr;</a>
+                                <!-- ลิงก์ตรงหมุดGoogle Maps ร้านโรงลวกเส้น ตลาดออเงิน -->
+                                <a href="https://www.google.com/maps/search/?api=1&query=%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%A5%E0%B8%A7%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B9%8B%E0%B8%99+%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AD%E0%B8%AD%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99" target="_blank" class="text-xs text-amber-400 font-bold hover:underline">เปิดใน Google Maps &rarr;</a>
                             </div>
-                            <div class="w-full h-64 bg-zinc-950 rounded-2xl relative overflow-hidden flex items-center justify-center border border-zinc-800">
-                                <div class="text-center p-6 space-y-2">
-                                    <span class="text-4xl">📍</span>
-                                    <p class="font-bold text-amber-400">ร้านโรงลวกเส้น ตลาดต้นไม้ออเงิน2</p>
-                                    <p class="text-xs text-slate-400">สะดวก มีที่จอดรถรองรับบริเวณตลาดต้นไม้</p>
-                                </div>
+                            <div class="w-full h-64 bg-zinc-950 rounded-2xl relative overflow-hidden border border-zinc-800">
+                                <!-- ฝังแผนที่ Google Maps ปักหมุดที่ โรงลวกเส้น ตลาดออเงิน -->
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.9348123280173!2d100.6488!3d13.9032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU0JzExLjUiTiAxMDDCsDM4JzU1LjciRQ!5e0!3m2!1sth!2sth!4v1690000000000!5m2!1sth!2sth&q=โรงลวกเส้น+ตลาดออเงิน" 
+                                    class="w-full h-full border-0" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
                             </div>
                         </div>
                     </div>
@@ -534,7 +509,7 @@
                 <p class="font-bold text-white text-base">เวลาเปิดบริการ</p>
                 <p>เปิดให้บริการทุกวันไม่มีวันหยุด</p>
                 <p class="text-amber-400 font-semibold">09:00 น. - 17:00 น.</p>
-                <p class="pt-2">📍 ตลาดต้นไม้ออเงิน2 แขวงออเงิน เขตสายไหม</p>
+                <p class="pt-2">📍 ตลาดออเงิน แขวงออเงิน เขตสายไหม</p>
             </div>
         </div>
 
@@ -653,12 +628,6 @@
     </div>
 
     <script>
-        /*
-         * =========================================================================
-         * MENU DATA ARRAY - Referencing images inside assets/images/
-         * =========================================================================
-         * หมายเหตุ: img จะเรียกไฟล์จาก assets/images/ หากไม่มีไฟล์จะดึงระบบสำรอง Unsplash อัตโนมัติ
-         */
         const menuData = [
             { id: 1, name: "เซตคู่หูสุดคุ้ม: ก๋วยเตี๋ยวเรือ 2 ชาม + เกี๊ยวทอด", price: 129, category: "promo", isNoodle: true, img: "assets/images/promo-set-1.jpg", fallbackImg: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=500&q=80", tag: "🔥 โปรสุดคุ้ม", featured: true },
             { id: 2, name: "เซตกะเพราถาด + ไข่ดาว 2 ฟอง + ชาเย็น 2 แก้ว", price: 159, category: "promo", isNoodle: false, img: "assets/images/promo-set-2.jpg", fallbackImg: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80", tag: "🔥 ขายดีประจำสัปดาห์", featured: true },
@@ -775,7 +744,6 @@
             const card = document.createElement("div");
             card.className = "bg-zinc-900 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between border border-zinc-800 group";
             
-            // Image with fallback handling
             const fallbackAction = item.fallbackImg ? `onerror="this.src='${item.fallbackImg}'"` : '';
 
             card.innerHTML = `
@@ -976,12 +944,13 @@
             document.getElementById("cart-modal").classList.toggle("hidden");
         }
 
+        /* ปรับฟังก์ชันสั่งซื้อ ให้เด้งไปค้นหาร้าน โรงลวกเส้น ตลาดออเงิน ใน LINE MAN */
         function orderViaLineMan() {
             if (cart.length === 0) {
                 showToast("กรุณาเลือกเมนูอาหารลงตะกร้าก่อนสั่งซื้อครับ");
                 return;
             }
-            window.open("https://lineman.line.me/", '_blank');
+            window.open("https://lineman.line.me/search?q=%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%A5%E0%B8%A7%E0%B8%81%E0%B9%80%E0%B8%AA%E0%B9%8B%E0%B8%99%20%E0%B8%95%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AD%E0%B8%AD%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99", '_blank');
         }
 
         function showToast(message) {
